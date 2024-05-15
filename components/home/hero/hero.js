@@ -3,7 +3,7 @@ import styles from './hero.module.scss';
 import design from '@/styles/design_system.module.scss';
 import { Button, Typography } from '@mui/material';
 import Image from 'next/image';
-import HeroDots from './heroDots/heroDots';
+import Dots from '@/components/overlay/dots/dots';
 
 import chip from '@/public/icons/chip.svg';
 
@@ -12,8 +12,9 @@ export default function Hero(props) {
 	return (
 		<div className={styles.section}>
 			<div className={styles.inside}>
-				<HeroDots />
-				{/* <div className={styles.info}>
+				<Dots type="hero" />
+				<Dots type="hero2" />
+				<div className={styles.info}>
 					<div className={styles.infoInside}>
 						<Image
 							src={chip}
@@ -39,7 +40,7 @@ export default function Hero(props) {
 					>
 						<Typography>Deploy Now</Typography>
 					</Button>
-				</div> */}
+				</div>
 			</div>
 		</div>
 	);

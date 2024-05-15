@@ -4,6 +4,7 @@ import design from '@/styles/design_system.module.scss';
 import { Button, Typography } from '@mui/material';
 import Image from 'next/image';
 import Dots from '@/components/overlay/dots/dots';
+import TextShadow from '@/components/overlay/textShadow/textShadow';
 
 import chip from '@/public/icons/chip.svg';
 
@@ -28,15 +29,22 @@ export default function Hero(props) {
 						</Typography>
 					</div>
 				</div>
-				<h1 className={styles.title}>The Internet of GPUs</h1>
+				<h1 className={styles.title}>
+					<span className={design.text_gradient}>
+						The Internet of
+					</span>{' '}
+					<span className={design.text_shadow}>
+						<TextShadow id="heroTitle" />
+						GPUs
+					</span>
+				</h1>
 
 				<div className={styles.buttons}>
 					<Button
-						className={`${design.button_pinkGradient} ${styles.btn}`}
+						className={`${design.button_blueGradient} ${styles.btn}`}
 						href="https://google.com"
 						target="_blank"
 						disableRipple
-						data-value="left"
 					>
 						<Typography>Deploy Now</Typography>
 					</Button>

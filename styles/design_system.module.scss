@@ -41,9 +41,28 @@
 	border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-// .text_gradient {
-// 	background: linear-gradient(91deg, $color-lightblue 0%, $color-lightblue2 100%);
-// 	background-clip: text;
-// 	-webkit-background-clip: text;
-// 	-webkit-text-fill-color: transparent;
-// }
+.text_gradient {
+	background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.7) 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text_shadow {
+	position: relative;
+	color: #6caee7;
+}
+
+.text_shadow::before {
+	position: absolute;
+	content: '';
+	left: -25%;
+	top: -25%;
+	width: 150%;
+	height: 150%;
+
+	background: url('../public/images/titleLight.png');
+	background-size: 100% 100%;
+
+	pointer-events: none;
+}

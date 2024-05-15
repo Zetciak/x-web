@@ -1,0 +1,49 @@
+@import './variables.scss';
+
+.button_blueGradient {
+	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+	border-radius: 12px;
+
+	p {
+		color: #fff;
+		font-family: $font1;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		text-transform: none;
+	}
+}
+
+.button_blueGradient::before {
+	position: absolute;
+	content: '';
+	left: 50%;
+	top: 50%;
+
+	translate: -50% -50%;
+
+	width: calc(100% + 16px);
+	height: calc(100% + 16px);
+
+	border-radius: 20px;
+
+	background: none;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+
+	transition: border $animation1;
+}
+
+.button_blueGradient:hover {
+	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+}
+
+.button_blueGradient:hover::before {
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+// .text_gradient {
+// 	background: linear-gradient(91deg, $color-lightblue 0%, $color-lightblue2 100%);
+// 	background-clip: text;
+// 	-webkit-background-clip: text;
+// 	-webkit-text-fill-color: transparent;
+// }

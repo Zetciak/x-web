@@ -1,0 +1,96 @@
+@import './variables.scss';
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	overflow-x: clip;
+}
+
+body {
+	background: $color-background;
+}
+
+.base {
+	background: $color-background;
+	color: $color-text;
+	font-family: $font1;
+	overflow: clip;
+	min-width: 100vw;
+}
+
+a {
+	text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.image {
+	position: relative;
+	object-fit: contain;
+	width: 100%;
+	height: auto;
+}
+
+.imageCover {
+	position: relative;
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+
+.imageFill {
+	position: relative;
+	object-fit: fill;
+	width: 100%;
+	height: 100%;
+}
+
+.video {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 65654px;
+	background: rgba(255, 255, 255, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 65654px;
+	background-color: $color-scroll;
+}
+
+::selection {
+	color: #fff;
+	background: rgba($color-scroll, 0.6);
+}
+
+img::selection {
+	background: #ffffff00;
+}
+
+// RWD
+@media (max-width: 1110px) {
+}

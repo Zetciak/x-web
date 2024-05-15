@@ -1,0 +1,34 @@
+@import '@/styles/variables.scss';
+
+.page {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+
+	min-height: 100dvh;
+}
+
+.page .heroBg {
+	position: relative;
+	width: 100%;
+	height: calc(100dvh);
+
+	z-index: 4;
+}
+
+.page .heroBg .videoDiv {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 80% 50%;
+	z-index: -1;
+
+	pointer-events: none;
+}
+
+// RWD
+@media (max-width: 780px) {
+}

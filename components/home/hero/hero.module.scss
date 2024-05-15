@@ -1,0 +1,179 @@
+@import '@/styles/variables.scss';
+
+.section {
+	position: relative;
+	width: 100%;
+	z-index: 4;
+}
+
+.section .inside {
+	position: relative;
+	width: 90%;
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+.inside .info {
+	position: relative;
+	width: 100%;
+
+	margin-top: 80px;
+
+	display: flex;
+	justify-content: center;
+}
+
+.inside .info .infoInside {
+	position: relative;
+
+	display: flex;
+	gap: 8px;
+	align-items: center;
+
+	padding: 10px 14px;
+
+	border-radius: 12px;
+
+	background: rgba(217, 217, 217, 0.01);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.08) inset;
+}
+
+.inside .info .infoInside img {
+	position: relative;
+	width: 17px;
+	height: auto;
+}
+
+.inside .info .infoInside p {
+	position: relative;
+
+	color: $color-text;
+	text-align: center;
+	font-family: $font1;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%;
+
+	opacity: 0.6;
+}
+
+.inside .title {
+	position: relative;
+
+	width: 100%;
+	text-align: center;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 62px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.inside .desc {
+	position: relative;
+	max-width: 440px;
+	margin-top: 12px;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.inside .buttons {
+	position: relative;
+	margin-top: 40px;
+
+	margin-left: 24px;
+
+	display: flex;
+	gap: 50px;
+}
+
+// .inside .buttons .btn {
+// 	position: relative;
+// 	height: 48px;
+
+// 	border-radius: 0px;
+// 	background: $color-lightblue;
+
+// 	transition: opacity $animation1;
+
+// 	p {
+// 		position: relative;
+// 		padding: 0px 12px;
+// 		color: $color-white;
+// 		font-family: $font1;
+// 		font-size: 18px;
+// 		font-style: normal;
+// 		font-weight: 400;
+// 		line-height: normal;
+// 		text-transform: none;
+// 	}
+
+// 	::before {
+// 		position: absolute;
+// 		content: '';
+// 		left: -28px;
+// 		top: -13px;
+// 		width: 20px;
+// 		height: 48px;
+
+// 		background: url('../../../public/purpleBtn_corners.svg');
+// 		filter: $color-lightblue-filter;
+// 		background-size: 100% 100%;
+// 		transform: rotate(180deg);
+// 	}
+
+// 	::after {
+// 		position: absolute;
+// 		content: '';
+// 		right: -28px;
+// 		top: -13px;
+// 		width: 20px;
+// 		height: 48px;
+
+// 		background: url('../../../public/purpleBtn_corners.svg');
+// 		filter: $color-lightblue-filter;
+// 		background-size: 100% 100%;
+// 	}
+// }
+
+// .inside .buttons .btn[data-value='right'] {
+// 	background: none;
+
+// 	p {
+// 		padding: 0px 42px;
+// 	}
+
+// 	::before {
+// 		display: none;
+// 	}
+
+// 	::after {
+// 		right: auto;
+// 		left: 0px;
+// 		top: -13px;
+// 		width: 100%;
+// 		height: 48px;
+
+// 		background: url('../../../public/blueBtn_bg.png');
+// 		filter: none;
+// 		background-size: 100% 100%;
+// 		z-index: -1;
+// 	}
+// }
+
+// .inside .buttons .btn:hover {
+// 	opacity: 0.8;
+// }
+
+// RWD
+@media (max-width: 700px) {
+}

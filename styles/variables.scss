@@ -1,0 +1,17 @@
+// filters: https://filtergen.vercel.app
+$color-black: #000;
+$color-white: #fff;
+$color-white-filter: brightness(0) invert(1);
+
+$color-lightblue: #65c8ff;
+$color-lightblue-filter: brightness(0) saturate(100%) invert(64%) sepia(6%)
+	saturate(4571%) hue-rotate(177deg) brightness(111%) contrast(110%);
+
+$color-scroll: $color-lightblue;
+$color-background: $color-black;
+$color-text: $color-white;
+$color-border: rgba($color-white, 0.12);
+
+$font1: 'Inter';
+$animation1: 0.3s;
+$animation2: 1s;

@@ -73,6 +73,9 @@ export default function Tokenomics(props) {
 							className={styles.copy}
 							onClick={() => {
 								toast.success('Contract address copied!');
+								navigator.clipboard.writeText(
+									'Ox1258d60b224c0c5cd888d37bbf31aa5fcfb7e870'
+								);
 							}}
 						>
 							<Image

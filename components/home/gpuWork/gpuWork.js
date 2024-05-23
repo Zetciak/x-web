@@ -6,7 +6,7 @@ import { Typography } from '@mui/material';
 import TextShadow from '@/components/overlay/textShadow/textShadow';
 
 import logo from '@/public/logo.svg';
-import gpuWorkBg from '@/public/images/gpuWork/bg.png';
+import gpuWorkBg from '@/public/images/gpuWork/gpuBg.png';
 import feature1 from '@/public/images/gpuWork/feature1.png';
 import feature2 from '@/public/images/gpuWork/feature2.png';
 import feature3 from '@/public/images/gpuWork/feature3.png';

@@ -1,0 +1,150 @@
+@import '@/styles/variables.scss';
+
+.section {
+	position: relative;
+	width: 100%;
+	z-index: 4;
+}
+
+.section .inside {
+	position: relative;
+	width: 90%;
+	max-width: 1120px;
+	margin: 0 auto;
+
+	margin-top: 180px;
+}
+
+.inside .gpu {
+	position: relative;
+	width: 100%;
+	height: 300px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.inside .gpu .gpuBg {
+	position: absolute;
+	width: 1468px;
+	height: auto;
+
+	left: 50%;
+	top: 65px;
+
+	translate: -50% 0;
+}
+
+.inside .gpu .oneGpu {
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+
+.inside .gpu .oneGpu .gpu1 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+
+.inside .gpu .oneGpu .gpu2 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+
+	animation: bgMove 3s infinite linear;
+}
+
+@keyframes bgMove {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.inside .gpu .oneGpu .gpu3 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+
+	img {
+		position: absolute;
+		width: 53px;
+		height: auto;
+
+		left: 50%;
+		top: 50%;
+		translate: -50% -50%;
+
+		backdrop-filter: blur(2px);
+	}
+}
+
+.inside .gpu .oneGpu[data-number='1'] {
+	margin-top: 100px;
+}
+
+.inside .gpu .oneGpu[data-number='4'] {
+	margin-top: 100px;
+}
+
+.inside .texts {
+	position: relative;
+	width: 100%;
+
+	margin-top: 24px;
+}
+
+.inside .texts .logo {
+	position: relative;
+	width: 20px;
+	height: auto;
+
+	margin: 0 auto;
+}
+
+.inside .texts .title {
+	position: relative;
+
+	width: 100%;
+	max-width: 730px;
+	text-align: center;
+
+	margin: 0 auto;
+	margin-top: 12px;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 120%;
+	letter-spacing: -1.44px;
+}
+
+.inside .texts .buttons {
+	position: relative;
+	margin-top: 40px;
+
+	display: flex;
+	justify-content: center;
+}
+
+.inside .texts .buttons .btn {
+	position: relative;
+	width: auto;
+	height: 48px;
+
+	padding: 0px 16px;
+
+	p {
+		font-size: 16px;
+	}
+}
+
+// RWD
+@media (max-width: 700px) {
+}

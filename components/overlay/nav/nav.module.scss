@@ -52,6 +52,8 @@
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
+
+	transition: color $animation1;
 }
 
 .inside .center .oneCenter::before {
@@ -79,6 +81,7 @@
 
 .inside .center .oneCenter:hover {
 	cursor: pointer;
+	color: rgba($color-text, 0.8);
 }
 
 .inside .center .oneCenter:hover::before {
@@ -97,8 +100,9 @@
 	position: relative;
 	height: 48px;
 
+	padding: 0px 24px;
+
 	p {
-		padding: 0px 24px;
 		font-size: 16px;
 	}
 }

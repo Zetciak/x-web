@@ -10,18 +10,6 @@
 	z-index: -1;
 }
 
-.dots[data-type='hero'] {
-	width: 192px;
-	left: 0px;
-	top: 0px;
-}
-
-.dots[data-type='hero2'] {
-	width: 192px;
-	right: 0px;
-	bottom: 0px;
-}
-
 .dots .oneDot {
 	position: relative;
 	width: 12px;
@@ -61,6 +49,54 @@
 	box-shadow: 0px 0px 30px 5px #68d1ff;
 
 	transition: all 2s;
+}
+
+.dots[data-type='hero1'] {
+	width: 192px;
+	left: 0px;
+	top: 0px;
+
+	z-index: 3;
+}
+
+.dots[data-type='hero2'] {
+	width: 192px;
+	right: 0px;
+	bottom: -160px;
+
+	z-index: 3;
+}
+
+.dots[data-type='gpu1'] {
+	width: 192px;
+	left: 0px;
+	bottom: -70px;
+
+	z-index: 3;
+}
+
+.dots[data-type='gpu2'] {
+	width: 192px;
+	right: 0px;
+	bottom: -210px;
+
+	z-index: 3;
+}
+
+.dots[data-type='infrastructure1'] {
+	width: 484px;
+	right: 0px;
+	top: -100px;
+
+	z-index: 3;
+}
+
+.dots[data-type='tokenomics1'] {
+	width: 328px;
+	right: 0px;
+	top: -70px;
+
+	z-index: 3;
 }
 
 // RWD

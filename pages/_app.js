@@ -1,6 +1,7 @@
 // >> Modules
 import { CssBaseline, StyledEngineProvider } from '@mui/material';
 import { useEffect } from 'react';
+import CustomToaster from '@/components/overlay/toaster/toaster';
 
 // >> Aos
 import Aos from 'aos';
@@ -21,7 +22,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<StyledEngineProvider injectFirst>
 			<CssBaseline />
-
+			<CustomToaster />
 			<Component {...pageProps} />
 		</StyledEngineProvider>
 	);

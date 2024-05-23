@@ -6,14 +6,15 @@ import Image from 'next/image';
 import Dots from '@/components/overlay/dots/dots';
 import TextShadow from '@/components/overlay/textShadow/textShadow';
 
-import chip from '@/public/icons/chip.svg';
+import chip from '@/public/images/hero/chip.svg';
+import heroBg from '@/public/images/hero/heroBg.png';
 
 // >> Script
 export default function Hero(props) {
 	return (
 		<div className={styles.section}>
 			<div className={styles.inside}>
-				<Dots type="hero" />
+				<Dots type="hero1" />
 				<Dots type="hero2" />
 				<div className={styles.info}>
 					<div className={styles.infoInside}>
@@ -49,6 +50,20 @@ export default function Hero(props) {
 						<Typography>Deploy Now</Typography>
 					</Button>
 				</div>
+
+				<h1 className={styles.bgTitle} data-text="CHANGE ME">
+					<div className={styles.titleBg}>
+						<Image
+							src={heroBg}
+							alt=""
+							quality={99}
+							priority={true}
+							className="image"
+						/>
+					</div>
+					<span className={styles.shadows}></span>
+					CHANGE ME
+				</h1>
 			</div>
 		</div>
 	);

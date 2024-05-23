@@ -1,0 +1,241 @@
+@import '@/styles/variables.scss';
+
+.section {
+	position: relative;
+	width: 100%;
+	z-index: 4;
+}
+
+.section .inside {
+	position: relative;
+	width: 90%;
+	max-width: 1120px;
+	margin: 0 auto;
+
+	margin-top: 200px;
+}
+
+.inside .infrastructureBg {
+	position: absolute;
+	right: -1000px;
+	top: -500px;
+
+	width: 1800px;
+	height: auto;
+
+	z-index: -1;
+	pointer-events: none;
+}
+
+.inside .topTexts {
+	position: relative;
+	width: 100%;
+}
+
+.inside .topTexts .logo {
+	position: relative;
+	width: 20px;
+	height: auto;
+}
+
+.inside .topTexts .title {
+	position: relative;
+
+	width: 100%;
+	max-width: 700px;
+
+	margin-top: 12px;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 120%;
+	letter-spacing: -1.44px;
+}
+
+.inside .topTexts .desc {
+	position: relative;
+
+	width: 100%;
+	max-width: 700px;
+
+	margin-top: 12px;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+	opacity: 0.6;
+}
+
+.inside .access {
+	position: relative;
+	width: 100%;
+
+	margin-top: 48px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.inside .access::before {
+	position: absolute;
+	content: '';
+	left: -50vw;
+	top: -1px;
+	width: 200vw;
+	height: 1px;
+
+	background: $color-border;
+}
+
+.inside .access::after {
+	position: absolute;
+	content: '';
+	left: -50vw;
+	bottom: -1px;
+	width: 200vw;
+	height: 1px;
+
+	background: $color-border;
+}
+
+.inside .access .texts {
+	position: relative;
+	max-width: 385px;
+}
+
+.inside .access .texts .topText {
+	position: relative;
+	width: 100%;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.inside .access .texts .bottomText {
+	position: relative;
+	width: 100%;
+	margin-top: 16px;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+	opacity: 0.6;
+}
+
+.inside .access .texts .square {
+	position: relative;
+	width: 24px;
+	height: 4px;
+
+	margin-top: 24px;
+
+	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+}
+
+.inside .access .features {
+	position: relative;
+
+	display: flex;
+	gap: 24px;
+}
+
+.inside .access .features .oneFeature {
+	position: relative;
+	width: 100%;
+	max-width: 210px;
+
+	padding: 16px;
+	padding-bottom: 24px;
+
+	background: url('../../../public/images/infrastructure/featureBg.png');
+	background-size: 100% 100%;
+}
+
+.inside .access .features .oneFeature .icon {
+	position: relative;
+	width: 16px;
+	height: auto;
+}
+
+.inside .access .features .oneFeature .featureTitle {
+	position: relative;
+	width: 100%;
+
+	margin-top: 12px;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 125%;
+}
+
+.inside .access .features .oneFeature .featureDesc {
+	position: relative;
+	width: 100%;
+	margin-top: 8px;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+
+	opacity: 0.5;
+}
+
+.inside .diagrams {
+	position: relative;
+	width: 100%;
+
+	margin-top: 40px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.inside .diagrams::before {
+	position: absolute;
+	content: '';
+	left: -50vw;
+	bottom: 5px;
+	width: 200vw;
+	height: 1px;
+
+	background: $color-border;
+}
+
+.inside .diagrams .leftDiagram {
+	position: relative;
+	width: 440px;
+	height: auto;
+}
+
+.inside .diagrams .rightDiagram {
+	position: relative;
+	width: 630px;
+	height: auto;
+}
+
+// RWD
+@media (max-width: 700px) {
+}

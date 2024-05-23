@@ -39,7 +39,7 @@ export default function Dots(props) {
 
 	return (
 		<div className={styles.dots} ref={dotsRef} data-type={props.type}>
-			{props.type === 'hero' ? (
+			{props.type === 'hero1' ? (
 				<>
 					{[...Array(13)].map((x, i) => (
 						<OneDot type="normal" key={i} />
@@ -166,6 +166,316 @@ export default function Dots(props) {
 					<OneDot type="empty" />
 					<OneDot type="empty" />
 					{[...Array(13)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+				</>
+			) : null}
+			{props.type === 'gpu1' ? (
+				<>
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(13)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(13)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(13)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+
+					{[...Array(13)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+
+					{[...Array(13)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(13)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+				</>
+			) : null}
+			{props.type === 'gpu2' ? (
+				<>
+					{[...Array(13)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(13)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(13)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(16)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(13)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(13)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(13)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+				</>
+			) : null}
+			{props.type === 'infrastructure1' ? (
+				<>
+					{[...Array(37)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(37)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(37)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(40)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(40)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(40)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(40)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(40)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+				</>
+			) : null}
+			{props.type === 'tokenomics1' ? (
+				<>
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(27)].map((x, i) => (
 						<OneDot type="normal" key={i} />
 					))}
 				</>

@@ -99,6 +99,30 @@
 	z-index: 3;
 }
 
+.dots[data-type='faq1'] {
+	width: 448px;
+	left: 0px;
+	top: 230px;
+
+	z-index: 3;
+}
+
+.dots[data-type='howItWorks1'] {
+	width: 448px;
+	right: 0px;
+	top: -105px;
+
+	z-index: 3;
+}
+
+.dots[data-type='pricing1'] {
+	width: 328px;
+	top: -100px;
+	left: 0px;
+
+	z-index: 3;
+}
+
 // RWD
 @media (max-width: 1150px) {
 }

@@ -1,0 +1,185 @@
+@import '@/styles/variables.scss';
+
+.section {
+	position: relative;
+	width: 100%;
+	z-index: 4;
+}
+
+.section .inside {
+	position: relative;
+	width: 90%;
+	max-width: 1120px;
+	margin: 0 auto;
+
+	margin-top: 190px;
+}
+
+.inside .bg {
+	position: absolute;
+	left: -1000px;
+	top: -300px;
+
+	width: 1800px;
+	height: auto;
+
+	z-index: -1;
+	pointer-events: none;
+}
+
+.inside .top {
+	position: relative;
+	width: 100%;
+}
+
+.inside .top .logo {
+	position: relative;
+	width: 20px;
+	height: auto;
+}
+
+.inside .top .title {
+	position: relative;
+
+	width: 100%;
+	margin-top: 12px;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.inside .top .desc {
+	position: relative;
+
+	width: 100%;
+	margin-top: 12px;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+	opacity: 0.6;
+}
+
+.inside .top .square {
+	position: relative;
+	width: 24px;
+	height: 4px;
+
+	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+
+	margin-top: 24px;
+}
+
+.inside .bottom {
+	position: relative;
+	width: 100%;
+
+	margin-top: 60px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.inside .bottom .left {
+	position: relative;
+	width: 100%;
+	max-width: 460px;
+	height: auto;
+}
+
+.inside .bottom .right {
+	position: relative;
+	width: 100%;
+	max-width: 600px;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.inside .bottom .right .onePoint {
+	position: relative;
+	width: 100%;
+
+	display: flex;
+	gap: 24px;
+	align-items: center;
+
+	background: url('../../../public/images/howItWorks/pointBg.png');
+	background-size: 100% 100%;
+
+	padding: 24px;
+}
+
+.inside .bottom .right .onePoint .number {
+	position: relative;
+	width: 48px;
+	min-width: 48px;
+	height: 48px;
+
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	background: rgba(217, 217, 217, 0.04);
+
+	p {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		translate: -50% -50%;
+
+		font-family: $font1;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+
+		background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.inside .bottom .right .onePoint .texts {
+	position: relative;
+
+	padding-right: 10%;
+}
+
+.inside .bottom .right .onePoint .texts .topText {
+	position: relative;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 85%;
+}
+
+.inside .bottom .right .onePoint .texts .bottomText {
+	position: relative;
+	margin-top: 12px;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 125%;
+
+	opacity: 0.6;
+}
+
+// RWD
+@media (max-width: 700px) {
+}

@@ -1,0 +1,205 @@
+@import '@/styles/variables.scss';
+
+.section {
+	position: relative;
+	width: 100%;
+	z-index: 4;
+}
+
+.section .inside {
+	position: relative;
+	width: 90%;
+	max-width: 1120px;
+	margin: 0 auto;
+
+	margin-top: 120px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.inside .faqBg {
+	position: absolute;
+	right: -1000px;
+	top: -400px;
+
+	width: 1800px;
+	height: auto;
+
+	z-index: -1;
+	pointer-events: none;
+}
+
+.inside .left {
+	position: relative;
+	width: 100%;
+	max-width: 430px;
+
+	margin-top: 80px;
+}
+
+.inside .left .logo {
+	position: relative;
+	width: 20px;
+	height: auto;
+}
+
+.inside .left .title {
+	position: relative;
+
+	width: 100%;
+	margin-top: 12px;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.inside .left .desc {
+	position: relative;
+
+	width: 100%;
+	margin-top: 12px;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+	opacity: 0.6;
+}
+
+.inside .left .square {
+	position: relative;
+	width: 24px;
+	height: 4px;
+
+	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+
+	margin-top: 24px;
+}
+
+.inside .right {
+	position: relative;
+	width: 100%;
+	max-width: 575px;
+}
+
+.inside .right .accordion {
+	position: relative;
+
+	background: none;
+	border: none;
+	box-shadow: none;
+	transition: all $animation1;
+}
+
+.inside .right .oneAccordion {
+	position: relative;
+	padding: 12px 0px;
+	padding-right: 16px;
+}
+
+.inside .right .oneAccordion::before {
+	position: absolute;
+	content: '';
+
+	left: 0px;
+	bottom: 0px;
+
+	width: 100%;
+	height: 20px;
+
+	background: url('../../../public/images/faq/questionLine.png');
+	background-size: 100% 100%;
+}
+
+.inside .right .accordion .accordionTitle {
+	position: relative;
+	color: $color-text;
+	font-family: $font1;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+
+	margin-left: -16px;
+
+	padding-right: 5%;
+
+	opacity: 0.6;
+
+	.normal {
+		position: relative;
+
+		opacity: 1;
+	}
+
+	.gradient {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+
+		font-weight: 600;
+
+		background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		opacity: 0;
+	}
+}
+
+.inside .right .accordion[data-selected='true'] .accordionTitle {
+	opacity: 1;
+
+	.normal {
+		opacity: 0;
+	}
+
+	.gradient {
+		opacity: 1;
+	}
+}
+
+.inside .right .accordion .accordionDesc {
+	position: relative;
+	color: $color-text;
+	font-family: $font1;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+	margin-left: -16px;
+
+	opacity: 0.6;
+}
+
+.inside .right .accordion .arrow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	img {
+		position: absolute;
+		width: 20px;
+		height: auto;
+
+		left: 50%;
+		top: 50%;
+		translate: -50% -50%;
+
+		transform: rotate(180deg);
+	}
+}
+
+// RWD
+@media (max-width: 700px) {
+}

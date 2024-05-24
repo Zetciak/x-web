@@ -9,6 +9,10 @@ import Gpu from './gpu/gpu';
 import GpuWork from './gpuWork/gpuWork';
 import Infrastructure from './infrastructure/infrastructure';
 import Tokenomics from './tokenomics/tokenomics';
+import Faq from './faq/faq';
+import Participate from './participate/participate';
+import HowItWorks from './howItWorks/howItWorks';
+import Pricing from './pricing/pricing';
 
 // >> Script
 export default function Home() {
@@ -20,6 +24,10 @@ export default function Home() {
 			<GpuWork />
 			<Infrastructure />
 			<Tokenomics />
+			<Faq />
+			<Participate />
+			{/* <HowItWorks />
+			<Pricing /> */}
 		</div>
 	);
 }

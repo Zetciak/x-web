@@ -75,20 +75,28 @@
 		rgba($color-lightblue, 0) 100%
 	);
 
-	animation: square1Anim 32s infinite linear;
+	animation: square1Anim 48s infinite linear;
 }
 
 @keyframes square1Anim {
 	0% {
 		top: calc(50% - 960px);
+		opacity: 0;
 	}
 
-	50% {
+	45% {
 		top: calc(50% - 460px);
+		opacity: 1;
+	}
+
+	55% {
+		top: calc(50% - 460px);
+		opacity: 0.8;
 	}
 
 	100% {
 		top: calc(50% - 960px);
+		opacity: 0;
 	}
 }
 
@@ -102,20 +110,28 @@
 		rgba($color-lightblue, 0) 100%
 	);
 
-	animation: square2Anim 32s infinite linear;
+	animation: square2Anim 48s infinite linear;
 }
 
 @keyframes square2Anim {
 	0% {
 		top: calc(50% + 1000px);
+		opacity: 0;
 	}
 
-	50% {
+	55% {
 		top: calc(50% + 500px);
+		opacity: 1;
+	}
+
+	45% {
+		top: calc(50% + 500px);
+		opacity: 0.8;
 	}
 
 	100% {
 		top: calc(50% + 1000px);
+		opacity: 0;
 	}
 }
 
@@ -129,20 +145,28 @@
 		rgba($color-lightblue, 0) 100%
 	);
 
-	animation: square3Anim 32s infinite linear;
+	animation: square3Anim 48s infinite linear;
 }
 
 @keyframes square3Anim {
 	0% {
 		left: calc(50% - 990px);
+		opacity: 0;
 	}
 
-	50% {
+	45% {
 		left: calc(50% - 490px);
+		opacity: 1;
+	}
+
+	55% {
+		left: calc(50% - 490px);
+		opacity: 0.8;
 	}
 
 	100% {
 		left: calc(50% - 990px);
+		opacity: 0;
 	}
 }
 
@@ -155,20 +179,28 @@
 		rgba($color-lightblue, 1) 0%,
 		rgba($color-lightblue, 0) 100%
 	);
-	animation: square4Anim 32s infinite linear;
+	animation: square4Anim 48s infinite linear;
 }
 
 @keyframes square4Anim {
 	0% {
 		left: calc(50% + 990px);
+		opacity: 0;
 	}
 
-	50% {
+	45% {
 		left: calc(50% + 490px);
+		opacity: 1;
+	}
+
+	55% {
+		left: calc(50% + 490px);
+		opacity: 0.8;
 	}
 
 	100% {
 		left: calc(50% + 990px);
+		opacity: 0;
 	}
 }
 

@@ -1,6 +1,5 @@
 // >> Modules
 import styles from './home.module.scss';
-import Image from 'next/image';
 
 // >> Components
 import Nav from '@/components/overlay/nav/nav';
@@ -13,6 +12,8 @@ import Faq from './faq/faq';
 import Participate from './participate/participate';
 import HowItWorks from './howItWorks/howItWorks';
 import Pricing from './pricing/pricing';
+import KeyInfrastructure from './keyInfrastructure/keyInfrastructure';
+import BuildAndScale from './buildAndScale/buildAndScale';
 
 // >> Script
 export default function Home() {
@@ -26,8 +27,10 @@ export default function Home() {
 			<Tokenomics />
 			<Faq />
 			<Participate />
-			{/* <HowItWorks />
-			<Pricing /> */}
+			<HowItWorks />
+			<Pricing />
+			<KeyInfrastructure />
+			<BuildAndScale />
 		</div>
 	);
 }

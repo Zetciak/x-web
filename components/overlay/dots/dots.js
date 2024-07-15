@@ -1,7 +1,6 @@
 // >> Modules
 import { useEffect, useRef } from 'react';
 import styles from './dots.module.scss';
-import design from '@/styles/design_system.module.scss';
 
 function getRandomInt(max) {
 	return Math.floor(Math.random() * max);
@@ -638,6 +637,30 @@ export default function Dots(props) {
 					{[...Array(24)].map((x, i) => (
 						<OneDot type="normal" key={i} />
 					))}
+				</>
+			) : null}
+			{props.type === 'keyInfrastructure1' ? (
+				<>
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(36)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(36)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(36)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
+					{[...Array(36)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					<OneDot type="empty" />
+					<OneDot type="empty" />
 				</>
 			) : null}
 		</div>

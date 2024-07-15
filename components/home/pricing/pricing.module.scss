@@ -73,102 +73,111 @@
 	position: relative;
 	width: 100%;
 
-	margin-top: 60px;
-
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.inside .bottom .left {
-	position: relative;
-	width: 100%;
-	max-width: 460px;
-	height: auto;
-}
-
-.inside .bottom .right {
-	position: relative;
-	width: 100%;
-	max-width: 600px;
+	margin-top: 48px;
+	padding: 48px 0px;
 
 	display: flex;
 	flex-wrap: wrap;
-	gap: 24px;
+	gap: 48px;
 }
 
-.inside .bottom .right .onePoint {
+.inside .bottom .lines {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: space-evenly;
+
+	z-index: -1;
+	pointer-events: none;
+}
+
+.inside .bottom .lines .line {
+	position: relative;
+
+	width: 1px;
+	height: 100%;
+
+	background: $color-border;
+}
+
+.inside .bottom .lines .line:first-child {
+	left: -8px;
+}
+
+.inside .bottom .lines .line:last-child {
+	left: 8px;
+}
+
+.inside .bottom .point {
 	position: relative;
 	width: 100%;
 
 	display: flex;
-	gap: 24px;
-	align-items: center;
-
-	background: url('../../../public/images/howItWorks/pointBg.png');
-	background-size: 100% 100%;
-
-	padding: 24px;
+	gap: 48px;
 }
 
-.inside .bottom .right .onePoint .number {
+.inside .bottom .point .card {
 	position: relative;
-	width: 48px;
-	min-width: 48px;
-	height: 48px;
-
-	border-radius: 8px;
-	border: 1px solid rgba(255, 255, 255, 0.08);
-	background: rgba(217, 217, 217, 0.04);
-
-	p {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		translate: -50% -50%;
-
-		font-family: $font1;
-		font-size: 20px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-
-		background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
+	width: 100%;
 }
 
-.inside .bottom .right .onePoint .texts {
+.inside .bottom .point .perHour {
 	position: relative;
-
-	padding-right: 10%;
+	width: 100%;
 }
 
-.inside .bottom .right .onePoint .texts .topText {
+.inside .bottom .point .avg {
 	position: relative;
+	width: 100%;
+}
 
-	color: $color-text;
+.inside .bottom .point .pointLine {
+	position: absolute;
+	width: 100%;
+	height: auto;
+
+	top: 100%;
+	left: 0px;
+}
+
+.inside .bottom .point .pointLine[data-value='right'] {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+.inside .bottom .point .pointTitle {
+	position: relative;
+	width: 100%;
+
+	color: $color-text2;
+	text-align: center;
 	font-family: $font1;
-	font-size: 22px;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 85%;
 }
 
-.inside .bottom .right .onePoint .texts .bottomText {
+.inside .bottom .point .value {
 	position: relative;
-	margin-top: 12px;
+	width: 100%;
 
 	color: $color-text;
+	text-align: center;
 	font-family: $font1;
-	font-size: 15px;
+	font-size: 16px;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 125%;
 
-	opacity: 0.6;
+	span {
+		font-weight: 400;
+		opacity: 0.6;
+	}
 }
 
 // RWD

@@ -7,10 +7,42 @@ import TextShadow from '@/components/overlay/textShadow/textShadow';
 import Dots from '@/components/overlay/dots/dots';
 
 import logo from '@/public/logo.svg';
-import leftShape from '@/public/images/participate/leftShape.png';
-import rightShape from '@/public/images/participate/rightShape.png';
 import bg from '@/public/images/pricing/bg.png';
-import leftImg from '@/public/images/howItWorks/leftImg.png';
+import leftLine from '@/public/images/pricing/leftLine.png';
+import centerLine from '@/public/images/pricing/centerLine.png';
+
+const list = [
+	{
+		mark: 'NVIDIA',
+		model: 'A100',
+		perHr: 0.85,
+		avgMonthly: 600,
+	},
+	{
+		mark: 'NVIDIA',
+		model: 'A6000 / A40',
+		perHr: 0.44,
+		avgMonthly: 300,
+	},
+	{
+		mark: 'NVIDIA',
+		model: 'GeForce 4090',
+		perHr: 0.47,
+		avgMonthly: 200,
+	},
+	{
+		mark: 'NVIDIA',
+		model: 'GeForce 3090',
+		perHr: 0.2,
+		avgMonthly: 150,
+	},
+	{
+		mark: 'NVIDIA',
+		model: 'A5000 / A10',
+		perHr: 0.22,
+		avgMonthly: 125,
+	},
+];
 
 // >> Script
 export default function Pricing(props) {
@@ -47,63 +79,81 @@ export default function Pricing(props) {
 					<div className={styles.square}></div>
 				</div>
 				<div className={styles.bottom}>
-					<div className={styles.left}>
-						<Image
-							src={leftImg}
-							alt=""
-							quality={99}
-							priority={true}
-							className="image"
-						/>
+					<div className={styles.point}>
+						<div className={styles.card}>
+							<Typography className={styles.pointTitle}>
+								GRAPHICS CARD
+							</Typography>
+						</div>
+						<div className={styles.perHour}>
+							<Typography className={styles.pointTitle}>
+								PER HOUR
+							</Typography>
+						</div>
+						<div className={styles.avg}>
+							<Typography className={styles.pointTitle}>
+								AVG MONTHLY
+							</Typography>
+						</div>
 					</div>
-					<div className={styles.right}>
-						<div className={styles.onePoint}>
-							<div className={styles.number}>
-								<Typography>01</Typography>
+					{list.map((element, index) => {
+						return (
+							<div className={styles.point} key={index}>
+								<div className={styles.card}>
+									<Typography className={styles.value}>
+										{element.mark}{' '}
+										<span>{element.model}</span>
+									</Typography>
+									<div className={styles.pointLine}>
+										<Image
+											src={leftLine}
+											alt=""
+											quality={99}
+											priority={true}
+											className="image"
+										/>
+									</div>
+								</div>
+								<div className={styles.perHour}>
+									<Typography className={styles.value}>
+										<span>${element.perHr} / hr</span>
+									</Typography>
+									<div
+										className={styles.pointLine}
+										data-value="center"
+									>
+										<Image
+											src={centerLine}
+											alt=""
+											quality={99}
+											priority={true}
+											className="image"
+										/>
+									</div>
+								</div>
+								<div className={styles.avg}>
+									<Typography className={styles.value}>
+										<span>${element.avgMonthly}</span>
+									</Typography>
+									<div
+										className={styles.pointLine}
+										data-value="right"
+									>
+										<Image
+											src={leftLine}
+											alt=""
+											quality={99}
+											priority={true}
+											className="image"
+										/>
+									</div>
+								</div>
 							</div>
-							<div className={styles.texts}>
-								<Typography className={styles.topText}>
-									Task Submission and Distribution
-								</Typography>
-								<Typography className={styles.bottomText}>
-									Clients submit their computational tasks to
-									Node Al, where they are instantly
-									distributed across our secure network of
-									high-performance Al nodes.
-								</Typography>
-							</div>
-						</div>
-						<div className={styles.onePoint}>
-							<div className={styles.number}>
-								<Typography>02</Typography>
-							</div>
-							<div className={styles.texts}>
-								<Typography className={styles.topText}>
-									Processing and Verification
-								</Typography>
-								<Typography className={styles.bottomText}>
-									The tasks are processed in parallel,
-									harnessing the power of the L1 Blockchain
-									for secure, efficient, and verifiable
-									computation.
-								</Typography>
-							</div>
-						</div>
-						<div className={styles.onePoint}>
-							<div className={styles.number}>
-								<Typography>03</Typography>
-							</div>
-							<div className={styles.texts}>
-								<Typography className={styles.topText}>
-									Secure Delivery
-								</Typography>
-								<Typography className={styles.bottomText}>
-									Verified results are encrypted and returned
-									to the clients promptly. ensuring
-									confidentiality and integrity.
-								</Typography>
-							</div>
-						</div>
+						);
+					})}
+					<div className={styles.lines}>
+						<div className={styles.line}></div>
+						<div className={styles.line}></div>
 					</div>
 				</div>
 			</div>

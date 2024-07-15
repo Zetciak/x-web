@@ -1,0 +1,171 @@
+@import '@/styles/variables.scss';
+
+.section {
+	position: relative;
+	width: 100%;
+	z-index: 4;
+
+	margin-top: 200px;
+}
+
+.section .providers {
+	position: relative;
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+
+	background: linear-gradient(
+			0deg,
+			rgba(255, 255, 255, 0.04) 0%,
+			rgba(255, 255, 255, 0.04) 100%
+		),
+		#000;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	box-shadow: 0px 0px 48px 0px rgba(255, 255, 255, 0.08) inset;
+}
+
+.section .providers::before {
+	position: absolute;
+	content: '';
+
+	left: -5px;
+	top: -5px;
+	width: 300px;
+	height: calc(100% + 5px + 5px);
+
+	background: linear-gradient(
+		-90deg,
+		rgba($color-background, 0) 0%,
+		$color-background 100%
+	);
+	pointer-events: none;
+	z-index: 0;
+}
+
+.section .providers::after {
+	position: absolute;
+	content: '';
+
+	right: -5px;
+	top: -5px;
+	width: 300px;
+	height: calc(100% + 5px + 5px);
+
+	background: linear-gradient(
+		90deg,
+		rgba($color-background, 0) 0%,
+		$color-background 100%
+	);
+	pointer-events: none;
+	z-index: 0;
+}
+
+.providers .providersInside {
+	position: relative;
+	width: 90%;
+	height: 120px;
+	max-width: 1120px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	z-index: 1;
+}
+
+.providersInside .leftText {
+	position: relative;
+
+	color: $color-text2;
+	font-family: $font1;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 85%;
+
+	opacity: 0.6;
+}
+
+.providersInside .rightLogos {
+	position: relative;
+
+	display: flex;
+	gap: 100px;
+}
+
+.providersInside .rightLogos .oneLogo {
+	position: relative;
+	width: 120px;
+	height: auto;
+
+	filter: saturate(0);
+	opacity: 0.4;
+	transition: filter $animation1, opacity $animation1;
+}
+
+.providersInside .rightLogos .oneLogo:hover {
+	filter: none;
+	opacity: 0.8;
+}
+
+.providersInside .rightLogos .oneLogo[data-type='nvidia'] {
+	width: 182px;
+}
+
+.providersInside .rightLogos .oneLogo[data-type='amd'] {
+	width: 142px;
+}
+
+.section .numbers {
+	position: relative;
+	width: 90%;
+	max-width: 1120px;
+
+	margin: 0 auto;
+	margin-top: 64px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.numbers .oneNumber {
+	position: relative;
+	width: 100%;
+}
+
+.numbers .oneNumber .topValue {
+	position: relative;
+	width: 100%;
+
+	color: $color-text;
+	text-align: center;
+	font-family: $font1;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 65%;
+
+	font-feature-settings: 'tnum';
+	font-variant-numeric: lining-nums;
+}
+
+.numbers .oneNumber .bottomValue {
+	position: relative;
+	width: 100%;
+	margin-top: 24px;
+
+	color: $color-text;
+	text-align: center;
+	font-family: $font1;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 85%;
+
+	opacity: 0.6;
+}
+
+// RWD
+@media (max-width: 700px) {
+}

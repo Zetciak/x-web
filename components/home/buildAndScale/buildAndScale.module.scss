@@ -1,0 +1,177 @@
+@import '@/styles/variables.scss';
+
+.section {
+	position: relative;
+	width: 100%;
+	z-index: 4;
+
+	margin-top: 50px;
+	padding: 300px 0px;
+}
+
+.section .inside {
+	position: relative;
+	width: 90%;
+	max-width: 600px;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.inside .bg {
+	position: absolute;
+
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+
+	z-index: -1;
+	pointer-events: none;
+}
+
+.inside .bg .bgImg {
+	position: relative;
+	width: 1436px;
+	height: auto;
+}
+
+.inside .bg .stripesMask {
+	position: absolute;
+	left: 0px;
+	top: -3px;
+	width: 100%;
+	height: 100%;
+
+	// background: url('../../../public/images/buildAndScale/stripesMask.png');
+	// background-size: 100% 100%;
+
+	-webkit-mask-image: url('../../../public/images/buildAndScale/stripesMask.png');
+	mask-image: url('../../../public/images/buildAndScale/stripesMask.png');
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	mask-size: 100% 100%;
+}
+
+.inside .bg .stripesMask .square {
+	position: absolute;
+
+	width: 600px;
+	height: 600px;
+
+	translate: -50% -50%;
+
+	transform: rotate(45deg);
+}
+
+.inside .bg .stripesMask .square[data-number='1'] {
+	left: 50%;
+	top: calc(50% - 460px);
+
+	background: linear-gradient(
+		-45deg,
+		rgba($color-lightblue, 1) 0%,
+		rgba($color-lightblue, 0) 100%
+	);
+
+	animation: square1Anim 32s infinite linear;
+}
+
+@keyframes square1Anim {
+	0% {
+		top: calc(50% - 960px);
+	}
+
+	50% {
+		top: calc(50% - 460px);
+	}
+
+	100% {
+		top: calc(50% - 960px);
+	}
+}
+
+.inside .bg .stripesMask .square[data-number='2'] {
+	left: 50%;
+	top: calc(50% + 500px);
+
+	background: linear-gradient(
+		135deg,
+		rgba($color-lightblue, 1) 0%,
+		rgba($color-lightblue, 0) 100%
+	);
+
+	animation: square2Anim 32s infinite linear;
+}
+
+@keyframes square2Anim {
+	0% {
+		top: calc(50% + 1000px);
+	}
+
+	50% {
+		top: calc(50% + 500px);
+	}
+
+	100% {
+		top: calc(50% + 1000px);
+	}
+}
+
+.inside .bg .stripesMask .square[data-number='3'] {
+	left: calc(50% - 490px);
+	top: calc(50% + 22px);
+
+	background: linear-gradient(
+		225deg,
+		rgba($color-lightblue, 1) 0%,
+		rgba($color-lightblue, 0) 100%
+	);
+
+	animation: square3Anim 32s infinite linear;
+}
+
+@keyframes square3Anim {
+	0% {
+		left: calc(50% - 990px);
+	}
+
+	50% {
+		left: calc(50% - 490px);
+	}
+
+	100% {
+		left: calc(50% - 990px);
+	}
+}
+
+.inside .bg .stripesMask .square[data-number='4'] {
+	left: calc(50% + 490px);
+	top: calc(50% + 22px);
+
+	background: linear-gradient(
+		45deg,
+		rgba($color-lightblue, 1) 0%,
+		rgba($color-lightblue, 0) 100%
+	);
+	animation: square4Anim 32s infinite linear;
+}
+
+@keyframes square4Anim {
+	0% {
+		left: calc(50% + 990px);
+	}
+
+	50% {
+		left: calc(50% + 490px);
+	}
+
+	100% {
+		left: calc(50% + 990px);
+	}
+}
+
+// RWD
+@media (max-width: 700px) {
+}

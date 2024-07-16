@@ -133,6 +133,16 @@
 	z-index: 3;
 }
 
+.dots[data-type='footer1'] {
+	width: 328px;
+	right: 0px;
+	top: 50%;
+
+	translate: 0 -50%;
+
+	z-index: 3;
+}
+
 // RWD
 @media (max-width: 1150px) {
 }

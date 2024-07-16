@@ -663,6 +663,25 @@ export default function Dots(props) {
 					<OneDot type="empty" />
 				</>
 			) : null}
+			{props.type === 'footer1' ? (
+				<>
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+				</>
+			) : null}
 		</div>
 	);
 }

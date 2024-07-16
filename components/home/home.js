@@ -3,6 +3,8 @@ import styles from './home.module.scss';
 
 // >> Components
 import Nav from '@/components/overlay/nav/nav';
+import Footer from '@/components/overlay/footer/footer';
+
 import Hero from './hero/hero';
 import Gpu from './gpu/gpu';
 import GpuWork from './gpuWork/gpuWork';
@@ -31,6 +33,7 @@ export default function Home() {
 			<Pricing />
 			<KeyInfrastructure />
 			<BuildAndScale />
+			<Footer />
 		</div>
 	);
 }

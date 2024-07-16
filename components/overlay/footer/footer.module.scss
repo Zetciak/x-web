@@ -1,0 +1,178 @@
+@import '@/styles/variables.scss';
+
+.section {
+	position: relative;
+	width: 100%;
+	z-index: 3;
+
+	padding-bottom: 48px;
+}
+
+.section .inside {
+	position: relative;
+	width: 90%;
+	max-width: 1120px;
+	margin: 0 auto;
+
+	display: flex;
+	gap: 48px;
+}
+
+.inside .footerShadow {
+	position: absolute;
+
+	width: 2320px;
+	height: auto;
+
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+
+	z-index: -1;
+	pointer-events: none;
+}
+
+.inside .left {
+	position: relative;
+	width: 100%;
+	max-width: 724px;
+	min-width: 724px;
+}
+
+.inside .left .top {
+	position: relative;
+	width: 100%;
+
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+.inside .left .top .logo {
+	position: relative;
+	width: 66px;
+}
+
+.inside .left .top .services {
+	position: relative;
+
+	display: flex;
+	gap: 8px;
+	align-items: center;
+
+	padding: 10px 16px;
+
+	border-radius: 12px;
+	background: rgba(217, 217, 217, 0.04);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	box-shadow: 0px 0px 48px 0px rgba(255, 255, 255, 0.08) inset;
+
+	img {
+		position: relative;
+		width: 17px;
+		height: auto;
+	}
+
+	p {
+		color: rgba($color-text, 0.6);
+		font-family: $font1;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 120%;
+	}
+}
+
+.inside .left .bottom {
+	position: relative;
+	width: 100%;
+
+	margin-top: 40px;
+	padding-top: 40px;
+
+	border-top: 1px solid $color-border;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.inside .left .bottom .link {
+	position: relative;
+
+	color: rgba($color-text, 0.6);
+	font-family: $font1;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+
+	span {
+		color: $color-text;
+	}
+
+	transition: color $animation1;
+}
+
+.inside .left .bottom .link:hover {
+	color: rgba($color-text, 0.8);
+}
+
+.inside .left .bottom .copyright {
+	position: relative;
+
+	color: rgba($color-text, 0.4);
+	font-family: $font1;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+.inside .right {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.inside .right .oneList {
+	position: relative;
+
+	display: flex;
+	gap: 4px;
+	flex-direction: column;
+}
+
+.inside .right .oneList .listTitle {
+	position: relative;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 175%;
+	letter-spacing: -0.18px;
+}
+
+.inside .right .oneList .oneLink {
+	position: relative;
+
+	color: rgba($color-text, 0.6);
+	font-family: $font1;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 175%;
+
+	transition: color $animation1;
+}
+
+.inside .right .oneList .oneLink:hover {
+	cursor: pointer;
+	color: rgba($color-text, 0.8);
+}
+
+// RWD
+@media (max-width: 1150px) {
+}

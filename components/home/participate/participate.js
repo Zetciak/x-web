@@ -109,15 +109,6 @@ export default function Participate(props) {
 							className="image"
 						/>
 					</div>
-					<div className={styles.xshapes2}>
-						<Image
-							src={xShapes}
-							alt=""
-							quality={99}
-							priority={true}
-							className="image"
-						/>
-					</div>
 				</div>
 			</div>
 		</div>

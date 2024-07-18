@@ -1,0 +1,221 @@
+@import '@/styles/variables.scss';
+
+.feature {
+	position: relative;
+	width: 100%;
+	min-height: 251px;
+	max-width: 358px;
+
+	background: url('../../../../public/images/gpuWork/bottomBg.png');
+	background-size: 100% 100%;
+}
+
+.feature .bottomTitle {
+	position: relative;
+	width: 100%;
+	margin-top: 24px;
+
+	color: $color-text;
+	text-align: center;
+	font-family: $font1;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.feature .bottomDesc {
+	position: relative;
+	width: 100%;
+	margin-top: 12px;
+
+	color: rgba($color-text, 0.6);
+	text-align: center;
+	font-family: $font1;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.feature .slider {
+	position: relative;
+	width: calc(100% - 24px - 24px);
+	margin: 0 auto;
+	margin-top: 24px;
+}
+
+.feature .slider .oneElement {
+	position: absolute;
+	width: 100%;
+	height: 68px;
+
+	padding: 0px 16px;
+
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	background: rgba(255, 255, 255, 0.04);
+	box-shadow: 0px 0px 48px 0px rgba(255, 255, 255, 0.08) inset;
+	backdrop-filter: blur(12px);
+
+	z-index: 6;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	transition: all $animation3;
+}
+
+.feature .slider .oneElement .value {
+	position: relative;
+
+	font-family: $font1;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%;
+	letter-spacing: -0.72px;
+
+	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	transition: opacity $animation3;
+}
+
+.feature .slider .oneElement .claimBtn {
+	position: relative;
+	width: 127px;
+	height: 36px;
+
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	background: rgba(255, 255, 255, 0.04);
+
+	box-shadow: 0px 0px 48px 0px rgba(255, 255, 255, 0.08) inset;
+
+	p {
+		color: $color-text;
+		font-family: $font1;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 100%;
+
+		text-transform: none;
+	}
+
+	transition: opacity $animation3;
+
+	animation: shadowAnim 2s infinite linear;
+}
+
+@keyframes shadowAnim {
+	0% {
+		box-shadow: 0px 0px 48px 0px rgba(255, 255, 255, 0.08) inset;
+	}
+
+	50% {
+		box-shadow: 0px 0px 32px 0px rgba(255, 255, 255, 0.2) inset;
+	}
+
+	100% {
+		box-shadow: 0px 0px 48px 0px rgba(255, 255, 255, 0.08) inset;
+	}
+}
+
+.feature .slider .oneElement[data-class='top-hidden'] {
+	position: absolute;
+	scale: 1.1;
+
+	top: -16px;
+
+	z-index: 7;
+	opacity: 0;
+
+	.value {
+		opacity: 0;
+	}
+
+	.claimBtn {
+		opacity: 0;
+	}
+}
+
+.feature .slider .oneElement[data-class='top'] {
+	z-index: 6;
+	top: 0px;
+
+	.value {
+		opacity: 1;
+	}
+
+	.claimBtn {
+		opacity: 1;
+	}
+
+	backdrop-filter: blur(12px);
+}
+
+.feature .slider .oneElement[data-class='center'] {
+	position: absolute;
+	scale: 0.89;
+
+	top: 16px;
+
+	z-index: 5;
+
+	.value {
+		opacity: 0;
+	}
+
+	.claimBtn {
+		opacity: 0;
+	}
+
+	backdrop-filter: blur(8px);
+}
+
+.feature .slider .oneElement[data-class='bottom'] {
+	position: absolute;
+	scale: 0.8;
+
+	top: 28px;
+
+	z-index: 4;
+
+	.value {
+		opacity: 0;
+	}
+
+	.claimBtn {
+		opacity: 0;
+	}
+
+	backdrop-filter: blur(2px);
+	opacity: 0.5;
+}
+
+.feature .slider .oneElement[data-class='bottom-hidden'] {
+	position: absolute;
+	scale: 0.6;
+
+	top: 36px;
+
+	z-index: 3;
+	opacity: 0;
+
+	.value {
+		opacity: 0;
+	}
+
+	.claimBtn {
+		opacity: 0;
+	}
+}
+
+// RWD
+@media (max-width: 700px) {
+}

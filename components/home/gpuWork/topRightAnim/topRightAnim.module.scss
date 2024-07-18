@@ -1,0 +1,158 @@
+@import '@/styles/variables.scss';
+
+.feature {
+	position: relative;
+	width: 100%;
+	min-height: 251px;
+
+	padding: 0px 24px;
+}
+
+.feature .bg {
+	position: absolute;
+	left: 0px;
+	top: 67px;
+	width: 100%;
+	height: calc(100% - 67px - 16px);
+
+	background: url('../../../../public/images/gpuWork/centerTopBg.png');
+	background-size: 100% 100%;
+}
+
+.feature .bg::before {
+	position: absolute;
+	content: '';
+	left: 0px;
+	top: -67px;
+	width: 100%;
+	height: 67px;
+
+	background: url('../../../../public/images/gpuWork/topTopBg.png');
+	background-size: 100% 100%;
+}
+
+.feature .bg::after {
+	position: absolute;
+	content: '';
+	left: 0px;
+	bottom: -16px;
+	width: 100%;
+	height: 16px;
+
+	background: url('../../../../public/images/gpuWork/bottomTopBg.png');
+	background-size: 100% 100%;
+}
+
+.feature .title {
+	position: relative;
+	width: 100%;
+	height: 67px;
+
+	display: flex;
+	align-items: center;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.feature .proceses {
+	position: relative;
+	width: 100%;
+
+	padding: 24px 0px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.feature .proceses .line {
+	position: relative;
+
+	width: 100%;
+	height: 1px;
+
+	background: $color-border;
+}
+
+.feature .proceses .oneStatus {
+	position: relative;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.feature .proceses .oneStatus .statusLeft {
+	position: relative;
+}
+
+.feature .proceses .oneStatus .statusLeft .leftTitle {
+	position: relative;
+
+	color: $color-white;
+	font-family: $font1;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 120%;
+}
+
+.feature .proceses .oneStatus .statusLeft .leftDesc {
+	position: relative;
+	margin-top: 8px;
+
+	color: rgba($color-white, 0.8);
+	font-family: $font1;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+.feature .proceses .oneStatus .statusRight {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	gap: 16px;
+
+	p {
+		color: rgba($color-white, 0.6);
+		font-family: $font1;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 120%;
+	}
+
+	img {
+		position: relative;
+		width: 24px;
+		height: auto;
+	}
+}
+
+@keyframes imgFlip {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.feature .proceses .oneStatus .statusRight[data-loading='true'] {
+	img {
+		animation: imgFlip 3s infinite linear;
+	}
+}
+
+// RWD
+@media (max-width: 700px) {
+}

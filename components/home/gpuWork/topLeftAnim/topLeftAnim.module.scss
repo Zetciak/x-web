@@ -1,0 +1,178 @@
+@import '@/styles/variables.scss';
+
+.feature {
+	position: relative;
+	width: 100%;
+	min-height: 251px;
+
+	padding: 0px 24px;
+}
+
+.feature .bg {
+	position: absolute;
+	left: 0px;
+	top: 67px;
+	width: 100%;
+	height: calc(100% - 67px - 16px);
+
+	background: url('../../../../public/images/gpuWork/centerTopBg.png');
+	background-size: 100% 100%;
+}
+
+.feature .bg::before {
+	position: absolute;
+	content: '';
+	left: 0px;
+	top: -67px;
+	width: 100%;
+	height: 67px;
+
+	background: url('../../../../public/images/gpuWork/topTopBg.png');
+	background-size: 100% 100%;
+}
+
+.feature .bg::after {
+	position: absolute;
+	content: '';
+	left: 0px;
+	bottom: -16px;
+	width: 100%;
+	height: 16px;
+
+	background: url('../../../../public/images/gpuWork/bottomTopBg.png');
+	background-size: 100% 100%;
+}
+
+.feature .title {
+	position: relative;
+	width: 100%;
+	height: 67px;
+
+	display: flex;
+	align-items: center;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.feature .proceses {
+	position: relative;
+	width: 100%;
+
+	display: flex;
+	gap: 16px;
+
+	margin-top: 24px;
+}
+
+.feature .proceses .oneProcess {
+	position: relative;
+	width: 100%;
+
+	padding: 16px;
+
+	background: url('../../../../public/images/gpuWork/processBg.png');
+	background-size: 100% 100%;
+}
+
+.feature .proceses .oneProcess .dot {
+	position: absolute;
+	right: 24px;
+	top: 24px;
+
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+
+	background: rgba($color-text, 0.2);
+}
+
+.feature .proceses .oneProcess[data-running='true'] {
+	.dot {
+		background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+	}
+
+	.statusDesc {
+		background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		font-weight: 600;
+	}
+}
+
+.feature .proceses .oneProcess .statusTitle {
+	position: relative;
+	width: 100%;
+
+	color: rgba($color-text, 0.6);
+	font-family: $font1;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 120%;
+}
+
+.feature .proceses .oneProcess .statusDesc {
+	position: relative;
+	width: 100%;
+	margin-top: 12px;
+
+	color: rgba($color-text, 0.2);
+	font-family: $font1;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 120%;
+}
+
+.feature .proceses .oneProcess .btn {
+	position: relative;
+	width: 100%;
+	height: 36px;
+	margin-top: 20px;
+
+	padding: 0px 12px;
+
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	background: rgba(255, 255, 255, 0.04);
+
+	box-shadow: 0px 0px 48px 0px rgba(255, 255, 255, 0.08) inset;
+	transition: box-shadow $animation1;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	p {
+		position: relative;
+		color: $color-text;
+		font-family: $font1;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 100%;
+
+		text-transform: none;
+	}
+
+	img {
+		position: relative;
+		width: 16px;
+		height: auto;
+	}
+}
+
+.feature .proceses .oneProcess .btn:hover {
+	box-shadow: 0px 0px 48px 0px rgba(255, 255, 255, 0.12) inset;
+}
+
+// RWD
+@media (max-width: 700px) {
+}

@@ -7,11 +7,12 @@ import TextShadow from '@/components/overlay/textShadow/textShadow';
 
 import logo from '@/public/logo.svg';
 import gpuWorkBg from '@/public/images/gpuWork/gpuBg.png';
-import feature1 from '@/public/images/gpuWork/feature1.png';
-import feature2 from '@/public/images/gpuWork/feature2.png';
-import feature3 from '@/public/images/gpuWork/feature3.png';
-import feature4 from '@/public/images/gpuWork/feature4.png';
-import feature5 from '@/public/images/gpuWork/feature5.png';
+
+import BottomLeftAnim from './bottomLeftAnim/bottomLeftAnim';
+import BottomCenterAnim from './bottomCenterAnim/bottomCenterAnim';
+import BottomRightAnim from './bottomRightAnim/bottomRightAnim';
+import TopLeftAnim from './topLeftAnim/topLeftAnim';
+import TopRightAnim from './topRightAnim/topRightAnim';
 
 // >> Script
 export default function GpuWork(props) {
@@ -58,53 +59,13 @@ export default function GpuWork(props) {
 				</div>
 				<div className={styles.features}>
 					<div className={styles.topRow}>
-						<div className={styles.oneFeature}>
-							<Image
-								src={feature1}
-								alt=""
-								quality={99}
-								priority={true}
-								className="image"
-							/>
-						</div>
-						<div className={styles.oneFeature}>
-							<Image
-								src={feature2}
-								alt=""
-								quality={99}
-								priority={true}
-								className="image"
-							/>
-						</div>
+						<TopLeftAnim />
+						<TopRightAnim />
 					</div>
 					<div className={styles.bottomRow}>
-						<div className={styles.oneFeature}>
-							<Image
-								src={feature3}
-								alt=""
-								quality={99}
-								priority={true}
-								className="image"
-							/>
-						</div>
-						<div className={styles.oneFeature}>
-							<Image
-								src={feature4}
-								alt=""
-								quality={99}
-								priority={true}
-								className="image"
-							/>
-						</div>
-						<div className={styles.oneFeature}>
-							<Image
-								src={feature5}
-								alt=""
-								quality={99}
-								priority={true}
-								className="image"
-							/>
-						</div>
+						<BottomLeftAnim />
+						<BottomCenterAnim />
+						<BottomRightAnim />
 					</div>
 				</div>
 			</div>

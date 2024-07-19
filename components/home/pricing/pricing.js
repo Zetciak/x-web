@@ -72,7 +72,7 @@ export default function Pricing(props) {
 					<h1 className={styles.title}>
 						<span className={design.text_shadow}>
 							<TextShadow id="pricingTitle" />
-							Pircing
+							Pricing
 						</span>
 					</h1>
 

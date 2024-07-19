@@ -217,5 +217,28 @@
 }
 
 // RWD
-@media (max-width: 700px) {
+@media (max-width: 1250px) {
+	.feature {
+		max-width: 338px;
+	}
+}
+
+@media (max-width: 800px) {
+	.feature {
+		width: calc(50% - 12px);
+	}
+
+	.feature .slider {
+		margin-top: 32px;
+	}
+}
+
+@media (max-width: 650px) {
+	.feature {
+		width: 100%;
+		max-width: 100%;
+
+		background: url('../../../../public/images/gpuWork/mobileShortBg.png');
+		background-size: 100% 100%;
+	}
 }

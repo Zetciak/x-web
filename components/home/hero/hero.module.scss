@@ -21,6 +21,8 @@
 
 	display: flex;
 	justify-content: center;
+
+	z-index: 3;
 }
 
 .inside .info .infoInside {
@@ -37,6 +39,7 @@
 	background: rgba(217, 217, 217, 0.01);
 	border: 1px solid rgba(255, 255, 255, 0.08);
 	box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.08) inset;
+	backdrop-filter: blur(5px);
 }
 
 .inside .info .infoInside img {
@@ -73,6 +76,8 @@
 	font-weight: 600;
 	line-height: 120%;
 	letter-spacing: -1.44px;
+
+	z-index: 3;
 }
 
 .inside .buttons {
@@ -81,6 +86,8 @@
 
 	display: flex;
 	justify-content: center;
+
+	z-index: 3;
 }
 
 .inside .buttons .btn {
@@ -231,5 +238,46 @@
 }
 
 // RWD
+@media (max-width: 1100px) {
+	.inside .bgTitle {
+		font-size: 120px;
+		letter-spacing: -3px;
+
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 900px) {
+	.inside .bgTitle .shadows {
+		opacity: 0.3;
+	}
+}
+
+@media (max-width: 800px) {
+	.inside .bgTitle {
+		font-size: 80px;
+		letter-spacing: -1px;
+
+		margin-top: 20px;
+	}
+}
+
 @media (max-width: 700px) {
+	.inside .title {
+		font-size: 40px;
+
+		line-height: 110%;
+		letter-spacing: -0.5px;
+	}
+}
+
+@media (max-width: 550px) {
+	.inside .bgTitle {
+		font-size: 60px;
+		letter-spacing: 0px;
+
+		margin-top: 20px;
+
+		background-size: 1000px auto;
+	}
 }

@@ -10,7 +10,7 @@ import stopIcon from '@/public/images/gpuWork/stopIcon.svg';
 // >> Script
 export default function TopLeftAnim() {
 	const [running1, setRunning1] = useState(true);
-	const [running2, setRunning2] = useState(true);
+	const [running2, setRunning2] = useState(false);
 	const [running3, setRunning3] = useState(false);
 
 	return (

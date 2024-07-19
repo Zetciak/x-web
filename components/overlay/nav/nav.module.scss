@@ -108,5 +108,26 @@
 }
 
 // RWD
-@media (max-width: 1150px) {
+@media (max-width: 900px) {
+	.inside .center {
+		display: none;
+	}
+
+	.section {
+		padding-bottom: 20px;
+	}
+
+	.inside .left {
+		width: 34px;
+		margin-top: 30px;
+	}
+
+	.inside .right {
+		margin-top: 22px;
+	}
+
+	.inside .right .btn {
+		height: 40px;
+		padding: 0px 18px;
+	}
 }

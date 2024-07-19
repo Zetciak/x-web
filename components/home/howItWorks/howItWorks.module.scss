@@ -96,6 +96,141 @@
 	height: auto;
 }
 
+.inside .bottom .left .mask {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: calc(100% - 5px);
+
+	// background: url('../../../public/images/howItWorks/leftImgMask.png');
+	// background-size: 100% 100%;
+
+	-webkit-mask-image: url('../../../public/images/howItWorks/leftImgMask.png');
+	mask-image: url('../../../public/images/howItWorks/leftImgMask.png');
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	mask-size: 100% 100%;
+}
+
+.inside .bottom .left .mask .leftDot {
+	position: absolute;
+	left: 41.5%;
+	top: 82%;
+
+	width: 24px;
+	height: 24px;
+	background: $color-lightblue;
+	opacity: 0.5;
+
+	border-radius: 100%;
+
+	animation: leftDotAnim 7s infinite linear;
+}
+
+@keyframes leftDotAnim {
+	0% {
+		left: 39.5%;
+		top: 85%;
+
+		opacity: 0;
+	}
+
+	6% {
+		left: 40%;
+		top: 85%;
+
+		opacity: 1;
+	}
+
+	10% {
+		left: 42%;
+		top: 82%;
+
+		opacity: 1;
+	}
+
+	90% {
+		left: 42%;
+		top: 12%;
+
+		opacity: 1;
+	}
+
+	94% {
+		left: 40%;
+		top: 12%;
+
+		opacity: 1;
+	}
+
+	100% {
+		left: 39.5%;
+		top: 12%;
+
+		opacity: 0;
+	}
+}
+
+.inside .bottom .left .mask .rightDot {
+	position: absolute;
+	right: 41.5%;
+	top: 82%;
+
+	width: 24px;
+	height: 24px;
+	background: $color-lightblue;
+	opacity: 0.5;
+
+	border-radius: 100%;
+
+	animation: rightDotAnim 7s infinite linear;
+}
+
+@keyframes rightDotAnim {
+	0% {
+		right: 42%;
+		top: 12%;
+
+		opacity: 0;
+	}
+
+	6% {
+		right: 42.5%;
+		top: 12%;
+
+		opacity: 1;
+	}
+
+	10% {
+		right: 44%;
+		top: 12%;
+
+		opacity: 1;
+	}
+
+	90% {
+		right: 44%;
+		top: 82%;
+
+		opacity: 1;
+	}
+
+	94% {
+		right: 42%;
+		top: 85%;
+
+		opacity: 1;
+	}
+
+	100% {
+		right: 42.5%;
+		top: 85%;
+
+		opacity: 0;
+	}
+}
+
 .inside .bottom .right {
 	position: relative;
 	width: 100%;

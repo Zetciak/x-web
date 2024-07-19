@@ -7,8 +7,6 @@ import TextShadow from '@/components/overlay/textShadow/textShadow';
 import Dots from '@/components/overlay/dots/dots';
 
 import logo from '@/public/logo.svg';
-import leftShape from '@/public/images/participate/leftShape.png';
-import rightShape from '@/public/images/participate/rightShape.png';
 import bg from '@/public/images/howItWorks/bg.png';
 import leftImg from '@/public/images/howItWorks/leftImg.png';
 
@@ -62,6 +60,10 @@ export default function HowItWorks(props) {
 							priority={true}
 							className="image"
 						/>
+						<div className={styles.mask}>
+							<div className={styles.leftDot}></div>
+							<div className={styles.rightDot}></div>
+						</div>
 					</div>
 					<div className={styles.right}>
 						<div className={styles.onePoint}>

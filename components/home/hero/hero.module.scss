@@ -264,7 +264,7 @@
 
 @media (max-width: 700px) {
 	.inside .title {
-		font-size: 40px;
+		font-size: 52px;
 
 		line-height: 110%;
 		letter-spacing: -0.5px;
@@ -279,5 +279,29 @@
 		margin-top: 20px;
 
 		background-size: 1000px auto;
+	}
+
+	.inside .bgTitle:after {
+		text-shadow: rgb(52, 88, 87) 2px 0px 0px,
+			rgb(52, 88, 87) 1.75517px 0.958851px 0px,
+			rgb(52, 88, 87) 1.0806px 1.68294px 0px,
+			rgb(52, 88, 87) 0.141474px 1.99499px 0px,
+			rgb(52, 88, 87) -0.832294px 1.81859px 0px,
+			rgb(52, 88, 87) -1.60229px 1.19694px 0px,
+			rgb(52, 88, 87) -1.97998px 0.28224px 0px,
+			rgb(52, 88, 87) -1.87291px -0.701566px 0px,
+			rgb(52, 88, 87) -1.30729px -1.5136px 0px,
+			rgb(52, 88, 87) -0.421592px -1.95506px 0px,
+			rgb(52, 88, 87) 0.567324px -1.91785px 0px,
+			rgb(52, 88, 87) 1.41734px -1.41108px 0px,
+			rgb(52, 88, 87) 1.92034px -0.558831px 0px;
+	}
+
+	.inside .info .infoInside img {
+		width: 14px;
+	}
+
+	.inside .info .infoInside p {
+		font-size: 11px;
 	}
 }

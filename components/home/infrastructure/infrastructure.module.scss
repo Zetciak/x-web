@@ -471,6 +471,7 @@
 	}
 
 	.inside .diagrams .rightDiagram {
+		display: none;
 		img {
 			left: -5.5%;
 			width: 109%;
@@ -478,7 +479,7 @@
 	}
 
 	.inside .diagrams .leftDiagram {
-		margin-top: 32px;
+		margin-top: 12px;
 	}
 
 	.inside .access .features .oneFeature {
@@ -489,7 +490,7 @@
 
 @media (max-width: 450px) {
 	.inside .diagrams .leftDiagram {
-		margin-top: 42px;
+		margin-top: 30px;
 	}
 
 	.inside .diagrams .leftDiagram .oneColumn[data-value='right'] {
@@ -498,15 +499,5 @@
 
 	.inside .diagrams .leftDiagram .rightText {
 		top: 20px;
-	}
-
-	.inside .diagrams .leftDiagram[data-visible='true'] {
-		.oneColumn[data-value='left'] {
-			height: 230px;
-		}
-
-		.oneColumn[data-value='right'] {
-			height: 80px;
-		}
 	}
 }

@@ -82,7 +82,7 @@
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 600;
-	line-height: 85%;
+	line-height: 110%;
 
 	opacity: 0.6;
 }
@@ -167,5 +167,54 @@
 }
 
 // RWD
+@media (max-width: 1000px) {
+	.section {
+		margin-top: 120px;
+	}
+
+	.providers .providersInside {
+		height: auto;
+		padding: 24px 0px;
+		flex-wrap: wrap;
+	}
+
+	.providersInside .leftText {
+		width: 100%;
+		text-align: center;
+	}
+
+	.providersInside .rightLogos {
+		width: 100%;
+		margin-top: 24px;
+		justify-content: center;
+		align-items: center;
+		gap: 50px;
+	}
+
+	.providersInside .rightLogos .oneLogo {
+		width: 96px;
+
+		scale: 0.7;
+	}
+
+	.providersInside .rightLogos .oneLogo[data-type='nvidia'] {
+		width: 200px;
+	}
+}
+
 @media (max-width: 700px) {
+	.section .numbers {
+		width: 95%;
+		margin-top: 48px;
+	}
+
+	.numbers .oneNumber .topValue {
+		font-size: 24px;
+	}
+
+	.numbers .oneNumber .bottomValue {
+		margin-top: 18px;
+		font-size: 18px;
+		line-height: 110%;
+	}
 }

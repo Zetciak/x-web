@@ -401,4 +401,27 @@
 		left: 50%;
 		translate: -50% 0;
 	}
+
+	.inside .left .onePoint {
+		background: url('../../../public/images/participate/pointBgMobile.png');
+		background-size: 100% 100%;
+	}
+
+	.inside .left .leftShape {
+		top: 74px;
+	}
+
+	.inside .left .rightShape {
+		top: 215px;
+	}
+}
+
+@media (max-width: 450px) {
+	.inside .left .leftShape {
+		top: 90px;
+	}
+
+	.inside .left .rightShape {
+		top: 255px;
+	}
 }

@@ -14,6 +14,7 @@ export default function KeyInfrastructure(props) {
 	return (
 		<div className={styles.section}>
 			<Dots type="keyInfrastructure1" />
+			<Dots type="keyInfrastructure2" />
 			<div className={styles.providers}>
 				<div className={styles.providersInside}>
 					<Typography className={styles.leftText}>

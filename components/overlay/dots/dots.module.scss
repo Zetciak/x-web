@@ -123,6 +123,17 @@
 	z-index: 3;
 }
 
+.dots[data-type='pricing2'] {
+	width: 328px;
+	top: -40px;
+	left: 50%;
+	translate: -50% 0;
+
+	z-index: 3;
+
+	display: none;
+}
+
 .dots[data-type='keyInfrastructure1'] {
 	width: 460px;
 	left: 50%;
@@ -131,6 +142,17 @@
 	translate: -50% 0;
 
 	z-index: 3;
+}
+
+.dots[data-type='keyInfrastructure2'] {
+	width: 328px;
+	top: -70px;
+	left: 50%;
+	translate: -50% 0;
+
+	z-index: 3;
+
+	display: none;
 }
 
 .dots[data-type='footer1'] {
@@ -144,14 +166,98 @@
 }
 
 // RWD
+@media (max-width: 1250px) {
+	.dots[data-type='tokenomics1'] {
+		right: auto;
+		left: 50%;
+		translate: -50% 0;
+
+		top: -55px;
+	}
+}
+
 @media (max-width: 1150px) {
 	.dots {
 		z-index: -1 !important;
+	}
+
+	.dots[data-type='faq1'] {
+		display: none;
+	}
+
+	.dots[data-type='howItWorks1'] {
+		right: auto;
+		left: 50%;
+		translate: -50% 0;
+
+		top: -160px;
+	}
+}
+
+@media (max-width: 900px) {
+	.dots[data-type='pricing1'] {
+		display: none;
+	}
+
+	.dots[data-type='pricing2'] {
+		display: flex;
+	}
+
+	.dots[data-type='keyInfrastructure1'] {
+		display: none;
+	}
+
+	.dots[data-type='keyInfrastructure2'] {
+		display: flex;
 	}
 }
 
 @media (max-width: 700px) {
 	.dots[data-type='infrastructure1'] {
+		display: none;
+	}
+
+	.dots[data-type='hero1'] {
+		left: 50%;
+		translate: -50% 0;
+	}
+
+	.dots[data-type='hero2'] {
+		right: auto;
+		left: 50%;
+		translate: -50% 0;
+	}
+
+	.dots[data-type='gpu1'] {
+		bottom: -30px;
+
+		z-index: 3;
+	}
+
+	.dots[data-type='gpu2'] {
+		bottom: -120px;
+	}
+
+	.dots[data-type='howItWorks1'] {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.dots[data-type='gpu1'] {
+		right: auto;
+		left: 50%;
+		translate: -50% 0;
+
+		top: auto;
+		bottom: -110px;
+	}
+
+	.dots[data-type='gpu2'] {
+		display: none;
+	}
+
+	.dots[data-type='footer1'] {
 		display: none;
 	}
 }

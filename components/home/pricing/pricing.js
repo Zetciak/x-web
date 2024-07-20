@@ -59,6 +59,7 @@ export default function Pricing(props) {
 					/>
 				</div>
 				<Dots type="pricing1" />
+				<Dots type="pricing2" />
 				<div className={styles.top}>
 					<div className={styles.logo}>
 						<Image

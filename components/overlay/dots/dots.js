@@ -639,6 +639,16 @@ export default function Dots(props) {
 					))}
 				</>
 			) : null}
+			{props.type === 'pricing2' ? (
+				<>
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+				</>
+			) : null}
 			{props.type === 'keyInfrastructure1' ? (
 				<>
 					<OneDot type="empty" />
@@ -661,6 +671,16 @@ export default function Dots(props) {
 					))}
 					<OneDot type="empty" />
 					<OneDot type="empty" />
+				</>
+			) : null}
+			{props.type === 'keyInfrastructure2' ? (
+				<>
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
+					{[...Array(27)].map((x, i) => (
+						<OneDot type="normal" key={i} />
+					))}
 				</>
 			) : null}
 			{props.type === 'footer1' ? (

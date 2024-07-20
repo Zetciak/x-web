@@ -469,9 +469,7 @@
 	.inside .access .features .oneFeature {
 		width: 100%;
 	}
-}
 
-@media (max-width: 500px) {
 	.inside .diagrams .rightDiagram {
 		img {
 			left: -5.5%;
@@ -481,6 +479,11 @@
 
 	.inside .diagrams .leftDiagram {
 		margin-top: 32px;
+	}
+
+	.inside .access .features .oneFeature {
+		background: url('../../../public/images/infrastructure/featureBgMobile.png');
+		background-size: 100% 100%;
 	}
 }
 

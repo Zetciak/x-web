@@ -18,7 +18,7 @@ export default function BottomRightAnim() {
 	const { start, update } = useCountUp({
 		ref: countUpRef,
 		start: 0,
-		end: 100,
+		end: 0,
 		duration: 3,
 		decimals: 0,
 		suffix: '%',
@@ -29,6 +29,7 @@ export default function BottomRightAnim() {
 		if (visible === false && isVisible === true) {
 			setVisible(true);
 			start();
+			update(100);
 		}
 	};
 

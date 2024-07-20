@@ -67,7 +67,12 @@ export default function Tokenomics(props) {
 					<div className={styles.titles}>
 						<Typography className={styles.leftText}>CA</Typography>
 						<Typography className={styles.rightText}>
-							Ox1258d60b224c0c5cd888d37bbf31aa5fcfb7e870
+							<span className={styles.desktop}>
+								Ox1258d60b224c0c5cd888d37bbf31aa5fcfb7e870
+							</span>
+							<span className={styles.mobile}>
+								Ox1258d60b...5fcfb7e870
+							</span>
 						</Typography>
 						<div
 							className={styles.copy}

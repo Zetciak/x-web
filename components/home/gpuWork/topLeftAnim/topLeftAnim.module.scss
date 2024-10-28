@@ -74,109 +74,28 @@
 	position: relative;
 	width: 100%;
 	max-width: 200px;
+	height: 150px;
 
-	padding: 16px;
+	top: -5px;
 
-	background: url('../../../../public/images/gpuWork/processBg.png');
-	background-size: 100% 100%;
+	//padding: 16px;
+
+	// background: url('../../../../public/images/gpuWork/processBg.png');
+	// background-size: 100% 100%;
 }
 
-.feature .proceses .oneProcess .dot {
+.feature .proceses .oneProcess .rive {
 	position: absolute;
-	right: 24px;
-	top: 24px;
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
 
-	width: 8px;
-	height: 8px;
-	border-radius: 100%;
-
-	background: rgba($color-text, 0.2);
-}
-
-.feature .proceses .oneProcess[data-running='true'] {
-	.dot {
-		background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
-	}
-
-	.statusDesc {
-		background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-
-		font-weight: 600;
-	}
-}
-
-.feature .proceses .oneProcess .statusTitle {
-	position: relative;
-	width: 100%;
-
-	color: rgba($color-text, 0.6);
-	font-family: $font1;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 120%;
-}
-
-.feature .proceses .oneProcess .statusDesc {
-	position: relative;
-	width: 100%;
-	margin-top: 12px;
-
-	color: rgba($color-text, 0.2);
-	font-family: $font1;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 120%;
-}
-
-.feature .proceses .oneProcess .btn {
-	position: relative;
-	width: 100%;
-	height: 36px;
-	margin-top: 20px;
-
-	padding: 0px 12px;
-
-	border-radius: 8px;
-	border: 1px solid rgba(255, 255, 255, 0.08);
-	background: rgba(255, 255, 255, 0.04);
-
-	box-shadow: 0px 0px 48px 0px rgba(255, 255, 255, 0.08) inset;
-	transition: box-shadow $animation1;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	p {
-		position: relative;
-		color: $color-text;
-		font-family: $font1;
-		font-size: 12px;
-		font-style: normal;
-		font-weight: 500;
-		line-height: 100%;
-
-		text-transform: none;
-	}
-
-	img {
-		position: relative;
-		width: 16px;
-		height: auto;
-	}
-}
-
-.feature .proceses .oneProcess .btn:hover {
-	box-shadow: 0px 0px 48px 0px rgba(255, 255, 255, 0.12) inset;
+	width: 150%;
+	height: 150%;
 }
 
 // RWD
-@media (max-width: 1150px) {
+@media (max-width: 500px) {
 	.feature .proceses .oneProcess:last-child {
 		display: none;
 	}

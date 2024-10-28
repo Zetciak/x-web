@@ -2,41 +2,25 @@
 import styles from './infrastructure.module.scss';
 import design from '@/styles/design_system.module.scss';
 import Image from 'next/image';
-import { useRef, useState } from 'react';
 import { Typography } from '@mui/material';
 import TextShadow from '@/components/overlay/textShadow/textShadow';
-import ReactVisibilitySensor from 'react-visibility-sensor';
-import { useCountUp } from 'react-countup';
+import { useRive } from '@rive-app/react-canvas';
+
 import Dots from '@/components/overlay/dots/dots';
 
 import logo from '@/public/logo.svg';
 import infrastructureBg from '@/public/images/infrastructure/bg.png';
-import infrastructureIcon from '@/public/images/infrastructure/icon.svg';
 import leftDiagram from '@/public/images/infrastructure/leftDiagram.png';
+import infrastructureIcon from '@/public/images/infrastructure/icon.svg';
 import rightDiagram from '@/public/images/infrastructure/rightDiagram.png';
 
 // >> Script
 export default function Infrastructure(props) {
-	const [visible, setVisible] = useState(false);
-
-	const countUpRef = useRef(null);
-	const { start, update } = useCountUp({
-		ref: countUpRef,
-		start: 0,
-		end: 0,
-		duration: 1.5,
-		decimals: 0,
-		prefix: '$',
-		useEasing: false,
+	const { RiveComponent } = useRive({
+		src: '/riv/savePerMonth.riv',
+		stateMachines: 'State Machine 1',
+		autoplay: true,
 	});
-
-	const changeVisible = (isVisible) => {
-		if (visible === false && isVisible === true) {
-			setVisible(true);
-			start();
-			update(1370);
-		}
-	};
 
 	return (
 		<div className={styles.section}>
@@ -150,41 +134,17 @@ export default function Infrastructure(props) {
 					</div>
 				</div>
 				<div className={styles.diagrams}>
-					<div className={styles.leftDiagram} data-visible={visible}>
-						<ReactVisibilitySensor
-							onChange={(isVisible) => {
-								changeVisible(isVisible);
-							}}
-						>
-							<div className={styles.diagramBg}>
-								<Image
-									src={leftDiagram}
-									alt=""
-									quality={99}
-									priority={true}
-									className="image"
-								/>
-							</div>
-						</ReactVisibilitySensor>
-						<Typography className={styles.rightText}>
-							Save <span ref={countUpRef}></span> per month or 90%
-						</Typography>
-						<div className={styles.oneColumn} data-value="left">
-							<Typography className={styles.topValue}>
-								$1627.9
-							</Typography>
-							<Typography className={styles.sideValue}>
-								$2.23 <span>per/h</span>
-							</Typography>
+					<div className={styles.leftDiagram}>
+						<div className={styles.diagramBg}>
+							<Image
+								src={leftDiagram}
+								alt=""
+								quality={99}
+								priority={true}
+								className="image"
+							/>
 						</div>
-						<div className={styles.oneColumn} data-value="right">
-							<Typography className={styles.topValue}>
-								$258
-							</Typography>
-							<Typography className={styles.sideValue}>
-								$0.34 <span>per/h</span>
-							</Typography>
-						</div>
+						<RiveComponent className={styles.rive} />
 					</div>
 					<div className={styles.rightDiagram}>
 						<Image

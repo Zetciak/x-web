@@ -10,144 +10,20 @@
 	background-size: 100% 100%;
 }
 
-.feature .bottomTitle {
-	position: relative;
-	width: 100%;
-	margin-top: 24px;
-
-	color: $color-text;
-	text-align: center;
-	font-family: $font1;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-}
-
-.feature .bottom {
-	position: relative;
-	width: calc(100% - 32px - 32px);
-	margin: 0 auto;
-	margin-top: 18px;
-}
-
-.feature .bottom .notFilled {
-	position: relative;
-	width: 293px;
-	height: auto;
-}
-
-.feature .bottom .filled {
+.feature .rive {
 	position: absolute;
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
 
-	left: 0px;
-	top: 0px;
-
-	width: 0%;
-	overflow: hidden;
-	transition: width 3s linear;
-
-	img {
-		width: 293px;
-		height: 100%;
-	}
-}
-
-.feature .bottom .filled[data-fill='true'] {
-	width: 100%;
-}
-
-.feature .bottomTexts {
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
-
-	width: 100%;
-}
-
-.feature .bottomTexts .topText {
-	position: relative;
-	width: 100%;
-	max-width: 100px;
-	margin: 0 auto;
-
-	color: rgba($color-text, 0.4);
-	text-align: center;
-	font-family: $font1;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 120%;
-	letter-spacing: -0.48px;
-}
-
-.feature .bottomTexts .percentage {
-	position: relative;
-	width: 100%;
-	margin-top: 8px;
-
-	color: $color-text;
-	text-align: center;
-	font-family: $font1;
-	font-size: 32px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 120%;
-	letter-spacing: -0.96px;
-}
-
-.feature .bottomTexts .hightBtn {
-	position: relative;
-	width: 100%;
-	margin-top: 10px;
-	padding-bottom: 16px;
-
-	display: flex;
-	justify-content: center;
-}
-
-.feature .bottomTexts .hightBtn .hightBtnInside {
-	position: relative;
-
-	padding: 10px 28px;
-
-	border-radius: 8px;
-	border: 1px solid rgba(255, 255, 255, 0.08);
-	background: rgba(255, 255, 255, 0.04);
-
-	box-shadow: 0px 0px 48px 0px rgba(255, 255, 255, 0.08) inset;
-
-	p {
-		color: $color-text;
-		text-align: center;
-		font-family: $font1;
-		font-size: 12px;
-		font-style: normal;
-		font-weight: 500;
-		line-height: normal;
-	}
+	width: 121%;
+	height: 121%;
 }
 
 // RWD
 @media (max-width: 1250px) {
 	.feature {
 		max-width: 338px;
-	}
-
-	.feature .bottom .notFilled {
-		width: 250px;
-	}
-
-	.feature .bottom .filled {
-		img {
-			width: 250px;
-			height: 100%;
-		}
-	}
-
-	.feature .bottom {
-		width: 250px;
-		margin-top: 32px;
 	}
 }
 

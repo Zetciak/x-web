@@ -5,15 +5,23 @@ import Image from 'next/image';
 import { Typography } from '@mui/material';
 import TextShadow from '@/components/overlay/textShadow/textShadow';
 import Dots from '@/components/overlay/dots/dots';
+import { useRive } from '@rive-app/react-canvas';
 
 import logo from '@/public/logo.svg';
 import tokenomicsBg from '@/public/images/tokenomics/bg.png';
 import circle from '@/public/images/tokenomics/circle.png';
+import circle2 from '@/public/images/tokenomics/circle2.png';
 import copy from '@/public/images/tokenomics/copy.svg';
 import toast from 'react-hot-toast';
 
 // >> Script
 export default function Tokenomics(props) {
+	const { RiveComponent } = useRive({
+		src: '/riv/tokenomics.riv',
+		stateMachines: 'State Machine 1',
+		autoplay: true,
+	});
+
 	return (
 		<div className={styles.section}>
 			<div className={styles.inside}>
@@ -55,12 +63,13 @@ export default function Tokenomics(props) {
 					<div className={styles.square}></div>
 					<div className={styles.circle}>
 						<Image
-							src={circle}
+							src={circle2}
 							alt=""
 							quality={99}
 							priority={true}
 							className="image"
 						/>
+						<RiveComponent className={styles.rive} />
 					</div>
 				</div>
 				<div className={styles.right}>

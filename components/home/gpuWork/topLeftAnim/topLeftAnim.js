@@ -28,7 +28,7 @@ export default function TopLeftAnim() {
 		<div className={styles.feature}>
 			<div className={styles.bg}></div>
 			<Typography className={styles.title}>
-				Connect more services & increase your earnings
+				Connect more GPU Partitions & increase your earnings.
 			</Typography>
 			<div className={styles.proceses}>
 				<div className={styles.oneProcess}>

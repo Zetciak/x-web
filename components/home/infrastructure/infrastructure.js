@@ -47,29 +47,29 @@ export default function Infrastructure(props) {
 					</div>
 					<h1 className={styles.title}>
 						<span className={design.text_gradient}>
-							Maximize your
+							Maximize Your
 						</span>{' '}
 						<span className={design.text_shadow}>
 							<TextShadow id="infrastructureTitle" />
-							infrastructure
+							AI Potential.
 						</span>
 					</h1>
 
 					<Typography className={styles.desc}>
-						Profitable, transparent and simple.
+						Power up your generative AI applications
 						<br />
-						Join a network of GPU clusters with sky high returns
+						with a growing cluster of GPU resources at lower costs.
 					</Typography>
 				</div>
 				<div className={styles.access}>
 					<div className={styles.texts}>
 						<Typography className={styles.topText}>
-							On-demand GPU access
+							On-demand Computational Resources.
 						</Typography>
 
 						<Typography className={styles.bottomText}>
-							Instant, permissionless access to a global network
-							of GPUs and CPUs
+							Instant & permissionless access to a global cluster
+							of shared GPUs & CPUs
 						</Typography>
 
 						<div className={styles.square}></div>
@@ -86,12 +86,11 @@ export default function Infrastructure(props) {
 								/>
 							</div>
 							<Typography className={styles.featureTitle}>
-								Save up to 90% on compute costs
+								Cost-saving GPU Resources.
 							</Typography>
 							<Typography className={styles.featureDesc}>
-								Spend significantly less on your GPU compute
-								compared to the major public clouds or buying
-								your own servers.
+								Spend up to 90% less on computational resources,
+								relative to other clouds & local set-up.
 							</Typography>
 						</div>
 						<div className={styles.oneFeature}>
@@ -105,11 +104,11 @@ export default function Infrastructure(props) {
 								/>
 							</div>
 							<Typography className={styles.featureTitle}>
-								Instantly deploy clusters
+								Instant cluster deployment & adaptation.
 							</Typography>
 							<Typography className={styles.featureDesc}>
-								Engage with the io.net Cloud, customize your
-								selection and deploy within a matter of seconds.
+								Go live with your AI application in seconds
+								without worrying about resource demand & strain.
 							</Typography>
 						</div>
 						<div className={styles.oneFeature}>
@@ -123,12 +122,11 @@ export default function Infrastructure(props) {
 								/>
 							</div>
 							<Typography className={styles.featureTitle}>
-								Fair pricing
+								Transparent Fees.
 							</Typography>
 							<Typography className={styles.featureDesc}>
-								Get refunded whenever you chose to terminate
-								your cluster, Always have access to a mix of
-								cost and performance.
+								All fees are stated upfront with accurate
+								metering to measure performance against cost.
 							</Typography>
 						</div>
 					</div>

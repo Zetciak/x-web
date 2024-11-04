@@ -40,11 +40,12 @@ export default function Participate(props) {
 						</div>
 						<div className={styles.texts}>
 							<Typography className={styles.topText}>
-								Buy $GPU
+								Installation & Preparation
 							</Typography>
 							<Typography className={styles.bottomText}>
-								Copy the contract address, go to Uniswap and
-								swap ETH to GPU
+								Download the NodeGPT dapp to simplify CPU/GPU
+								partitioning to be dedicated to the network as a
+								node.
 							</Typography>
 						</div>
 					</div>
@@ -54,10 +55,12 @@ export default function Participate(props) {
 						</div>
 						<div className={styles.texts}>
 							<Typography className={styles.topText}>
-								Go to NODEAI DAPP
+								Join Network
 							</Typography>
 							<Typography className={styles.bottomText}>
-								Visit the NodeAl dApp and view the staking pool
+								Connect to the NodeGPT network to make GPU
+								resources available for use in the resource
+								marketplace setting your pricing.
 							</Typography>
 						</div>
 					</div>
@@ -67,11 +70,12 @@ export default function Participate(props) {
 						</div>
 						<div className={styles.texts}>
 							<Typography className={styles.topText}>
-								Stake $GPU and earn $ETH
+								Earn Rewards
 							</Typography>
 							<Typography className={styles.bottomText}>
-								Stake your $GPU tokens and earn a share of the
-								monthly revenue
+								Earn rewards in $NODE when your computer
+								completes assigned tasks in the open marketplace
+								based on the demand and supply of resources.
 							</Typography>
 						</div>
 					</div>
@@ -90,13 +94,13 @@ export default function Participate(props) {
 						<span className={design.text_gradient}>How to</span>{' '}
 						<span className={design.text_shadow}>
 							<TextShadow id="participateTitle" />
-							praticipate
+							Participate
 						</span>
 					</h1>
 
 					<Typography className={styles.desc}>
-						Here are the step-by-step instructions to participate in
-						our revenue-sharing ecosystem.
+						Join a global decentralised computation machine to power
+						the next AI revolution & earn rewards.
 					</Typography>
 
 					<div className={styles.square}></div>

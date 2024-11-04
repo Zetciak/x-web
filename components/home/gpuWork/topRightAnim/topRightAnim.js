@@ -52,20 +52,20 @@ export default function TopRightAnim() {
 		<div className={styles.feature}>
 			<div className={styles.bg}></div>
 			<Typography className={styles.title}>
-				Keep track of all your previous Jobs
+				Keep track of all your resource utilization.
 			</Typography>
 			<div className={styles.proceses}>
 				<div className={styles.oneStatus}>
 					<div className={styles.statusLeft}>
 						<Typography className={styles.leftTitle}>
-							In Progress
+							In progress
 						</Typography>
 						<Typography className={styles.leftDesc}>
-							Your Job is currently in Progress
+							5 tasks are currently using resources
 						</Typography>
 					</div>
 					<div className={styles.statusRight} data-loading={true}>
-						<Typography>Job status</Typography>
+						<Typography>Task status</Typography>
 						<Image
 							src={refreshIcon}
 							alt=""

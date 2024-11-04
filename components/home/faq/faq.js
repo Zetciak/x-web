@@ -18,24 +18,24 @@ import arrow from '@/public/images/faq/arrow.svg';
 
 const points = [
 	{
-		title: 'What is NODEAI?',
-		desc: 'Node Al is a groundbreaking decentralized platform designed to facilitate access to GPU and Al resources, enabling users to participate, contribute, and benefit from the evolving landscape of artificial intelligence.',
+		title: 'What is NodeGPT?',
+		desc: 'NodeGPT is a decentralized AI solution that revolutionizes the way computational resources are pooled together & managed.',
 	},
 	{
-		title: 'How do i buy $GPU?',
-		desc: 'Node Al is a groundbreaking decentralized platform designed to facilitate access to GPU and Al resources, enabling users to participate, contribute, and benefit from the evolving landscape of artificial intelligence.',
+		title: 'How do I buy $NODE?',
+		desc: 'xxxxxxxxxxxxxxx',
 	},
 	{
-		title: 'How secure is a GPU Node?',
-		desc: 'Node Al is a groundbreaking decentralized platform designed to facilitate access to GPU and Al resources, enabling users to participate, contribute, and benefit from the evolving landscape of artificial intelligence.',
+		title: 'How secure is a NodeGPT Node? ',
+		desc: 'NodeGPT Nodes commit to the network with $NODE stakes. They are penalized for malicious actions and incentivized for uptime & great performances.  ',
 	},
 	{
-		title: 'How can i access my Node?',
-		desc: 'Node Al is a groundbreaking decentralized platform designed to facilitate access to GPU and Al resources, enabling users to participate, contribute, and benefit from the evolving landscape of artificial intelligence.',
+		title: 'How can I access my Node? ',
+		desc: 'If you participate on the NodeGPT network or run an AI application on it, you can track its performance from the NodeGPT web platform or installed app.',
 	},
 	{
-		title: 'How much will i earn by staking $GPU?',
-		desc: 'Node Al is a groundbreaking decentralized platform designed to facilitate access to GPU and Al resources, enabling users to participate, contribute, and benefit from the evolving landscape of artificial intelligence.',
+		title: 'How much will I earn from being a NodeGPT node?',
+		desc: 'Earnings depend on your $NODE stake and performance in the network. ',
 	},
 ];
 

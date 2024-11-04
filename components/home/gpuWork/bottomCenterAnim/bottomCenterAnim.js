@@ -42,11 +42,9 @@ export default function BottomCenterAnim() {
 	return (
 		<div className={styles.feature}>
 			<Typography className={styles.bottomTitle}>
-				Track Connectivity Performance
+				Track & Claim Earnings.
 			</Typography>
-			<Typography className={styles.bottomDesc}>
-				Anytime with one click
-			</Typography>
+			<Typography className={styles.bottomDesc}>Your rewards.</Typography>
 
 			<div className={styles.slider}>
 				{elements.map((element, index) => (

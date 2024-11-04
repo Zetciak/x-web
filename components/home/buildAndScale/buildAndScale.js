@@ -56,8 +56,8 @@ export default function BuildAndScale(props) {
 
 				<Typography className={styles.desc}>
 					Develop, train, and deploy Al applications on our
-					decentralized cloud. Perfect for Al developers. A powerful
-					no-fuss environment that &quot;just works.&quot;
+					decentralized cloud perfect for small Al developers with big
+					resource needs.
 				</Typography>
 
 				<div className={styles.buttons}>

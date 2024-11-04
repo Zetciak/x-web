@@ -39,20 +39,17 @@ export default function GpuWork(props) {
 						/>
 					</div>
 					<h1 className={styles.title}>
-						<span className={design.text_gradient}>
-							We put your
-						</span>{' '}
+						<span className={design.text_gradient}>Fuel the</span>{' '}
 						<span className={design.text_shadow}>
 							<TextShadow id="gpuWorkTitle" />
-							GPU
-						</span>{' '}
-						<span className={design.text_gradient}>to work</span>
+							AI Revolution
+						</span>
+						<span className={design.text_gradient}>.</span>
 					</h1>
 
 					<Typography className={styles.desc}>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Etiam eget auctor ante. Aenean viverra magna eget
-						feugiat feugiat.
+						Contribute your idle GPU Resources to power a new era of
+						AI systems & earn passive income.
 					</Typography>
 
 					<div className={styles.square}></div>

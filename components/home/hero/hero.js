@@ -26,18 +26,17 @@ export default function Hero(props) {
 							className="image"
 						/>
 						<Typography>
-							Unmatched Compute Power for Large-Scale AI Startups
+							Limitless Computational Power for Scalable GPTs.
 						</Typography>
 					</div>
 				</div>
 				<h1 className={styles.title}>
-					<span className={design.text_gradient}>
-						The Internet of
-					</span>{' '}
+					<span className={design.text_gradient}>The </span>{' '}
 					<span className={design.text_shadow}>
 						<TextShadow id="heroTitle" />
-						GPUs
+						AI Power{' '}
 					</span>
+					<span className={design.text_gradient}>Network</span>
 				</h1>
 
 				<div className={styles.buttons}>
@@ -47,11 +46,11 @@ export default function Hero(props) {
 						target="_blank"
 						disableRipple
 					>
-						<Typography>Deploy Now</Typography>
+						<Typography>Join Network</Typography>
 					</Button>
 				</div>
 
-				<h1 className={styles.bgTitle} data-text="CHANGE ME">
+				<h1 className={styles.bgTitle} data-text="AI POWER!">
 					<div className={styles.titleBg}>
 						<Image
 							src={heroBg}
@@ -62,7 +61,7 @@ export default function Hero(props) {
 						/>
 					</div>
 					<span className={styles.shadows}></span>
-					CHANGE ME
+					AI POWER!
 				</h1>
 			</div>
 		</div>

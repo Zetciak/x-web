@@ -158,14 +158,14 @@ export default function Gpu(props) {
 					</div>
 					<h1 className={styles.title}>
 						<span className={design.text_gradient}>
-							Harness the power of global
+							Power up your
 						</span>{' '}
 						<span className={design.text_shadow}>
 							<TextShadow id="gpuTitle" />
-							GPU
+							Generative AI
 						</span>{' '}
 						<span className={design.text_gradient}>
-							resources with a single click
+							with a global pool of GPU resources!
 						</span>
 					</h1>
 
@@ -176,7 +176,7 @@ export default function Gpu(props) {
 							target="_blank"
 							disableRipple
 						>
-							<Typography>Start earning now</Typography>
+							<Typography>Launch</Typography>
 						</Button>
 					</div>
 				</div>

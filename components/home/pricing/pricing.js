@@ -14,33 +14,33 @@ import centerLine from '@/public/images/pricing/centerLine.png';
 const list = [
 	{
 		mark: 'NVIDIA',
-		model: 'A100',
-		perHr: 0.85,
-		avgMonthly: 600,
+		model: 'RTX 3060 (Entry-Level)',
+		perHr: 0.04,
+		avgMonthly: 28.8,
 	},
 	{
 		mark: 'NVIDIA',
-		model: 'A6000 / A40',
-		perHr: 0.44,
-		avgMonthly: 300,
+		model: 'RTX 3080 (Advanced)',
+		perHr: 0.085,
+		avgMonthly: 61.2,
 	},
 	{
 		mark: 'NVIDIA',
-		model: 'GeForce 4090',
-		perHr: 0.47,
-		avgMonthly: 200,
+		model: 'A40 (Professional)	   ',
+		perHr: 0.15,
+		avgMonthly: 108.0,
 	},
 	{
 		mark: 'NVIDIA',
-		model: 'GeForce 3090',
-		perHr: 0.2,
-		avgMonthly: 150,
+		model: 'A100 (High-End)',
+		perHr: 0.25,
+		avgMonthly: 180,
 	},
 	{
 		mark: 'NVIDIA',
-		model: 'A5000 / A10',
-		perHr: 0.22,
-		avgMonthly: 125,
+		model: 'H100 (Cutting-Edge)',
+		perHr: 0.35,
+		avgMonthly: 252,
 	},
 ];
 
@@ -76,6 +76,10 @@ export default function Pricing(props) {
 							Pricing
 						</span>
 					</h1>
+					<Typography className={styles.desc}>
+						NodeGPT Resource performance are tailored according to
+						user preference.
+					</Typography>
 
 					<div className={styles.square}></div>
 				</div>
@@ -83,17 +87,17 @@ export default function Pricing(props) {
 					<div className={styles.point}>
 						<div className={styles.card}>
 							<Typography className={styles.pointTitle}>
-								GRAPHICS CARD
+								Model/Tier
 							</Typography>
 						</div>
 						<div className={styles.perHour}>
 							<Typography className={styles.pointTitle}>
-								PER HOUR
+								Hourly Rate
 							</Typography>
 						</div>
 						<div className={styles.avg}>
 							<Typography className={styles.pointTitle}>
-								AVG MONTHLY
+								Monthly Cost
 							</Typography>
 						</div>
 					</div>
@@ -117,7 +121,9 @@ export default function Pricing(props) {
 								</div>
 								<div className={styles.perHour}>
 									<Typography className={styles.value}>
-										<span>${element.perHr} / hr</span>
+										<span>
+											${element.perHr.toFixed(3)} / hr
+										</span>
 									</Typography>
 									<div
 										className={styles.pointLine}
@@ -134,7 +140,9 @@ export default function Pricing(props) {
 								</div>
 								<div className={styles.avg}>
 									<Typography className={styles.value}>
-										<span>${element.avgMonthly}</span>
+										<span>
+											${element.avgMonthly.toFixed(2)}
+										</span>
 									</Typography>
 									<div
 										className={styles.pointLine}

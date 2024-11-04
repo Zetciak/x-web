@@ -36,17 +36,17 @@ export default function HowItWorks(props) {
 						/>
 					</div>
 					<h1 className={styles.title}>
-						<span className={design.text_gradient}>How it </span>{' '}
+						<span className={design.text_gradient}>How </span>{' '}
 						<span className={design.text_shadow}>
 							<TextShadow id="howItWorksTitle" />
-							works
+							NodeGPT{' '}
 						</span>
+						<span className={design.text_gradient}>works</span>
 					</h1>
 
 					<Typography className={styles.desc}>
-						Our platform is where complexity meets simplicity,
-						providing a seamless interface for clients to tap into a
-						global network of Al nodes.
+						A decentralized resource pack generative AI projects to
+						tap into for scalable solutions.
 					</Typography>
 
 					<div className={styles.square}></div>
@@ -72,13 +72,13 @@ export default function HowItWorks(props) {
 							</div>
 							<div className={styles.texts}>
 								<Typography className={styles.topText}>
-									Task Submission and Distribution
+									GPT Resource Distribution
 								</Typography>
 								<Typography className={styles.bottomText}>
-									Clients submit their computational tasks to
-									Node Al, where they are instantly
-									distributed across our secure network of
-									high-performance Al nodes.
+									GPT AI Applications are powered by NodeGPT
+									where their computational overhead is shared
+									across NodeGPT pre-built computational
+									resources.
 								</Typography>
 							</div>
 						</div>
@@ -92,9 +92,9 @@ export default function HowItWorks(props) {
 								</Typography>
 								<Typography className={styles.bottomText}>
 									The tasks are processed in parallel,
-									harnessing the power of the L1 Blockchain
-									for secure, efficient, and verifiable
-									computation.
+									harnessing the power of the GPU resource
+									cluster coordinated on-chain for secure,
+									efficient, and verifiable computation.
 								</Typography>
 							</div>
 						</div>
@@ -108,7 +108,7 @@ export default function HowItWorks(props) {
 								</Typography>
 								<Typography className={styles.bottomText}>
 									Verified results are encrypted and returned
-									to the clients promptly. ensuring
+									to the clients promptly ensuring
 									confidentiality and integrity.
 								</Typography>
 							</div>

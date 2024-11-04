@@ -58,6 +58,26 @@
 	line-height: normal;
 }
 
+.inside .top .desc {
+	position: relative;
+
+	width: 100%;
+	max-width: 620px;
+	text-align: center;
+
+	margin: 0 auto;
+	margin-top: 12px;
+
+	color: $color-text;
+	font-family: $font1;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+	opacity: 0.6;
+}
+
 .inside .top .square {
 	position: relative;
 	width: 24px;

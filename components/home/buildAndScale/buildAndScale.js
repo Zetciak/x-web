@@ -67,6 +67,10 @@ export default function BuildAndScale(props) {
 						target="_blank"
 						disableRipple
 					>
+						<div
+							className={design.button_blueGradient_bg}
+							data-type="long"
+						></div>
 						<Typography>Sign Up Now</Typography>
 					</Button>
 				</div>

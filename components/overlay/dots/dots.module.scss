@@ -241,6 +241,20 @@
 	.dots[data-type='howItWorks1'] {
 		display: none;
 	}
+
+	.dots[data-type='footer1'] {
+		display: none;
+	}
+}
+
+@media (max-width: 650px) {
+	.dots[data-type='gpu1'] {
+		display: none;
+	}
+
+	.dots[data-type='gpu2'] {
+		display: none;
+	}
 }
 
 @media (max-width: 500px) {
@@ -254,10 +268,6 @@
 	}
 
 	.dots[data-type='gpu2'] {
-		display: none;
-	}
-
-	.dots[data-type='footer1'] {
 		display: none;
 	}
 }

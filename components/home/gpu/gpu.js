@@ -176,6 +176,9 @@ export default function Gpu(props) {
 							target="_blank"
 							disableRipple
 						>
+							<div
+								className={design.button_blueGradient_bg}
+							></div>
 							<Typography>Launch</Typography>
 						</Button>
 					</div>

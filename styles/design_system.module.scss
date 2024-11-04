@@ -14,7 +14,11 @@
 	}
 }
 
-.button_blueGradient::before {
+.button_blueGradient:hover {
+	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+}
+
+.button_blueGradient .button_blueGradient_bg {
 	position: absolute;
 	content: '';
 	left: 50%;
@@ -25,20 +29,88 @@
 	width: calc(100% + 16px);
 	height: calc(100% + 16px);
 
-	border-radius: 20px;
+	//border-radius: 20px;
 
 	background: none;
-	border: 1px solid rgba(255, 255, 255, 0.12);
 
-	transition: border $animation1;
+	-webkit-mask-image: url('../public/images/strokeMask.png');
+	mask-image: url('../public/images/strokeMask.png');
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	mask-size: 100% 100%;
+
+	opacity: 0.3;
+	transition: opacity $animation1;
 }
 
-.button_blueGradient:hover {
-	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+.button_blueGradient .button_blueGradient_bg[data-type='long'] {
+	-webkit-mask-image: url('../public/images/strokeMaskLong.png');
+	mask-image: url('../public/images/strokeMaskLong.png');
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	mask-size: 100% 100%;
 }
 
-.button_blueGradient:hover::before {
-	border: 1px solid rgba(255, 255, 255, 0.2);
+.button_blueGradient:hover .button_blueGradient_bg {
+	opacity: 0.7;
+}
+
+.button_blueGradient .button_blueGradient_bg::after {
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 30px;
+
+	background: $color-white;
+	border-radius: 100%;
+
+	left: 0%;
+	top: 0%;
+
+	animation: bgMove 5s infinite linear;
+}
+
+.button_blueGradient .button_blueGradient_bg::before {
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 30px;
+
+	background: $color-white;
+	border-radius: 100%;
+
+	left: 0%;
+	top: 0%;
+
+	animation: bgMove 5s infinite linear;
+	animation-delay: -2.5s;
+}
+
+@keyframes bgMove {
+	0% {
+		left: calc(0% - 15px);
+		top: calc(0% - 15px);
+	}
+
+	35% {
+		left: calc(100% - 15px);
+		top: calc(0% - 15px);
+	}
+
+	50% {
+		left: calc(100% - 15px);
+		top: calc(100% - 15px);
+	}
+
+	85% {
+		left: calc(0% - 15px);
+		top: calc(100% - 15px);
+	}
+
+	100% {
+		left: calc(0% - 15px);
+		top: calc(0% - 15px);
+	}
 }
 
 .text_gradient {

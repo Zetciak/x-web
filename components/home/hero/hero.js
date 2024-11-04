@@ -46,6 +46,10 @@ export default function Hero(props) {
 						target="_blank"
 						disableRipple
 					>
+						<div
+							className={design.button_blueGradient_bg}
+							data-type="long"
+						></div>
 						<Typography>Join Network</Typography>
 					</Button>
 				</div>

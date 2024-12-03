@@ -26,6 +26,7 @@ export default function TopLeftAnim() {
 
 	return (
 		<div className={styles.feature}>
+			<div className={styles.cursor}></div>
 			<div className={styles.bg}></div>
 			<Typography className={styles.title}>
 				Connect more GPU Partitions & increase your earnings.

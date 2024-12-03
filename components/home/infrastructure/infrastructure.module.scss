@@ -245,6 +245,38 @@
 	}
 }
 
+.inside .diagrams .leftDiagram::after {
+	position: absolute;
+	content: '';
+
+	right: 0px;
+	top: 0px;
+
+	width: 130px;
+	height: 100%;
+
+	opacity: 0;
+
+	z-index: 100;
+	display: none;
+}
+
+.inside .diagrams .leftDiagram::before {
+	position: absolute;
+	content: '';
+
+	right: 215px;
+	top: 0px;
+
+	width: 80px;
+	height: 100%;
+
+	opacity: 0;
+
+	z-index: 100;
+	display: none;
+}
+
 .inside .diagrams .leftDiagram .rive {
 	position: absolute;
 	left: 50%;
@@ -253,6 +285,22 @@
 
 	width: 105%;
 	height: 105%;
+}
+
+.inside .diagrams .leftDiagram .rive::before {
+	position: absolute;
+	content: '';
+
+	left: 100px;
+	top: 0px;
+
+	width: calc(100% - 100px);
+	height: 150px;
+
+	opacity: 0;
+
+	z-index: 100;
+	display: none;
 }
 
 .inside .diagrams .rightDiagram {
@@ -367,6 +415,18 @@
 	.inside .access .features .oneFeature {
 		background: url('../../../public/images/infrastructure/featureBgMobile.png');
 		background-size: 100% 100%;
+	}
+
+	.inside .diagrams .leftDiagram .rive::before {
+		display: block;
+	}
+
+	.inside .diagrams .leftDiagram::before {
+		display: block;
+	}
+
+	.inside .diagrams .leftDiagram::after {
+		display: block;
 	}
 }
 

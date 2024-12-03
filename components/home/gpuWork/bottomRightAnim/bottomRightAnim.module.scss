@@ -33,6 +33,7 @@
 	opacity: 0;
 
 	z-index: 100;
+	display: none;
 }
 
 .feature .rive::after {
@@ -48,6 +49,7 @@
 	opacity: 0;
 
 	z-index: 100;
+	display: none;
 }
 
 .feature::after {
@@ -63,6 +65,7 @@
 	opacity: 0;
 
 	z-index: 100;
+	display: none;
 }
 
 .feature::before {
@@ -78,6 +81,8 @@
 	opacity: 0;
 
 	z-index: 100;
+
+	display: none;
 }
 
 // RWD
@@ -100,5 +105,21 @@
 
 		background: url('../../../../public/images/gpuWork/mobileShortBg.png');
 		background-size: 100% 100%;
+	}
+
+	.feature .rive::before {
+		display: block;
+	}
+
+	.feature .rive::after {
+		display: block;
+	}
+
+	.feature::after {
+		display: block;
+	}
+
+	.feature::before {
+		display: block;
 	}
 }

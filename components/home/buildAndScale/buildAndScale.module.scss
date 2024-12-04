@@ -261,11 +261,13 @@
 
 .inside .logo {
 	position: relative;
-	width: 20px;
+	width: 50px;
 	height: auto;
 
 	margin: 0 auto;
 	padding-top: 200px;
+
+	filter: $color-white-filter;
 }
 
 .inside .title {

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Button, Typography } from '@mui/material';
 import { Link } from 'react-scroll';
 
-import logo from '@/public/logo.svg';
+import logo from '@/public/longLogo.svg';
 
 // >> Script
 export default function Nav(props) {

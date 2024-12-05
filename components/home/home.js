@@ -16,6 +16,7 @@ import HowItWorks from './howItWorks/howItWorks';
 import Pricing from './pricing/pricing';
 import KeyInfrastructure from './keyInfrastructure/keyInfrastructure';
 import BuildAndScale from './buildAndScale/buildAndScale';
+import Roadmap from './roadmap/roadmap';
 
 // >> Script
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
 			<GpuWork />
 			<Infrastructure />
 			<Tokenomics />
+			<Roadmap />
 			<Faq />
 			<Participate />
 			<HowItWorks />

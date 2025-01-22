@@ -28,9 +28,11 @@
 
 	translate: -50% -50%;
 
-	background: rgba(217, 217, 217, 0.01);
-	border: 1px solid rgba(255, 255, 255, 0.08);
-	box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.08) inset;
+	// background: rgba(217, 217, 217, 0.01);
+	// border: 1px solid rgba(255, 255, 255, 0.08);
+	// box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.08) inset;
+	background: url('../../../../public/images/roadmap/pointBg.png');
+	background-size: 100% 100%;
 	backdrop-filter: blur(12.5px);
 
 	padding: 14px 8px;

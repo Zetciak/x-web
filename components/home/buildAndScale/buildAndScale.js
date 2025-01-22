@@ -68,6 +68,10 @@ export default function BuildAndScale(props) {
 						disableRipple
 					>
 						<div
+							className={design.button_blueGradient_bg_before}
+							data-type="long"
+						></div>
+						<div
 							className={design.button_blueGradient_bg}
 							data-type="long"
 						></div>

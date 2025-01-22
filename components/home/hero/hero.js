@@ -3,6 +3,7 @@ import styles from './hero.module.scss';
 import design from '@/styles/design_system.module.scss';
 import { Button, Typography } from '@mui/material';
 import Image from 'next/image';
+import BuyBox from './buyBox/buyBox';
 import Dots from '@/components/overlay/dots/dots';
 import TextShadow from '@/components/overlay/textShadow/textShadow';
 
@@ -13,9 +14,20 @@ import heroBg from '@/public/images/hero/heroBg.png';
 export default function Hero(props) {
 	return (
 		<div className={styles.section}>
+			<div className={styles.heroBg}>
+				<Image
+					src={heroBg}
+					alt=""
+					quality={99}
+					priority={true}
+					className="image"
+				/>
+			</div>
+			<div className={styles.anim1}></div>
+			<div className={styles.anim2}></div>
 			<div className={styles.inside}>
 				<Dots type="hero1" />
-				<Dots type="hero2" />
+
 				<div className={styles.info}>
 					<div className={styles.infoInside}>
 						<Image
@@ -47,26 +59,17 @@ export default function Hero(props) {
 						disableRipple
 					>
 						<div
+							className={design.button_blueGradient_bg_before}
+							data-type="long"
+						></div>
+						<div
 							className={design.button_blueGradient_bg}
 							data-type="long"
 						></div>
 						<Typography>Join Network</Typography>
 					</Button>
 				</div>
-
-				<h1 className={styles.bgTitle} data-text="AI POWER!">
-					<div className={styles.titleBg}>
-						<Image
-							src={heroBg}
-							alt=""
-							quality={99}
-							priority={true}
-							className="image"
-						/>
-					</div>
-					<span className={styles.shadows}></span>
-					AI POWER!
-				</h1>
+				<BuyBox />
 			</div>
 		</div>
 	);

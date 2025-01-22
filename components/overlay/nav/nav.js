@@ -46,6 +46,9 @@ export default function Nav(props) {
 						target="_blank"
 						disableRipple
 					>
+						<div
+							className={design.button_blueGradient_bg_before}
+						></div>
 						<div className={design.button_blueGradient_bg}></div>
 						<Typography>Sign Up</Typography>
 					</Button>

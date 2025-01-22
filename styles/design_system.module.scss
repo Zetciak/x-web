@@ -1,8 +1,8 @@
 @import './variables.scss';
 
 .button_blueGradient {
-	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
-	border-radius: 12px;
+	background: none;
+	border-radius: 0px;
 
 	p {
 		color: #fff;
@@ -14,11 +14,7 @@
 	}
 }
 
-.button_blueGradient:hover {
-	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
-}
-
-.button_blueGradient .button_blueGradient_bg {
+.button_blueGradient::before {
 	position: absolute;
 	content: '';
 	left: 50%;
@@ -26,8 +22,51 @@
 
 	translate: -50% -50%;
 
-	width: calc(100% + 16px);
-	height: calc(100% + 16px);
+	width: 100%;
+	height: 100%;
+
+	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+
+	-webkit-clip-path: polygon(
+		0 calc(0% + 14px),
+		calc(0% + 14px) 0,
+		100% 0,
+		100% calc(100% - 14px),
+		calc(100% - 14px) 100%,
+		0 100%
+	);
+
+	clip-path: polygon(
+		0 calc(0% + 14px),
+		calc(0% + 14px) 0,
+		100% 0,
+		100% calc(100% - 14px),
+		calc(100% - 14px) 100%,
+		0 100%
+	);
+
+	z-index: -1;
+}
+
+.button_blueGradient[data-color='white']::before {
+	filter: $color-white-filter;
+	opacity: 0.13;
+}
+
+.button_blueGradient:hover {
+	background: none;
+}
+
+.button_blueGradient .button_blueGradient_bg_before {
+	position: absolute;
+	content: '';
+	left: 50%;
+	top: 50%;
+
+	translate: -50% -50%;
+
+	width: calc(100% + 14px + 14px);
+	height: calc(100% + 14px + 14px);
 
 	//border-radius: 20px;
 
@@ -39,7 +78,57 @@
 	mask-repeat: no-repeat;
 	mask-size: 100% 100%;
 
-	opacity: 0.3;
+	opacity: 0.4;
+	transition: opacity $animation1;
+}
+
+.button_blueGradient .button_blueGradient_bg_before[data-type='long'] {
+	-webkit-mask-image: url('../public/images/strokeMaskLong.png');
+	mask-image: url('../public/images/strokeMaskLong.png');
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	mask-size: 100% 100%;
+}
+
+.button_blueGradient[data-color='white'] .button_blueGradient_bg_before {
+	filter: $color-white-filter;
+	opacity: 0.2;
+}
+
+.button_blueGradient .button_blueGradient_bg_before::after {
+	position: absolute;
+	content: '';
+
+	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+
+	left: 0%;
+	top: 0%;
+
+	width: 100%;
+	height: 100%;
+}
+.button_blueGradient .button_blueGradient_bg {
+	position: absolute;
+	content: '';
+	left: 50%;
+	top: 50%;
+
+	translate: -50% -50%;
+
+	width: calc(100% + 14px + 14px);
+	height: calc(100% + 14px + 14px);
+
+	//border-radius: 20px;
+
+	background: none;
+
+	-webkit-mask-image: url('../public/images/strokeMask.png');
+	mask-image: url('../public/images/strokeMask.png');
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	mask-size: 100% 100%;
+
+	opacity: 0.4;
 	transition: opacity $animation1;
 }
 
@@ -51,8 +140,13 @@
 	mask-size: 100% 100%;
 }
 
+.button_blueGradient[data-color='white'] .button_blueGradient_bg {
+	filter: $color-white-filter;
+	opacity: 0.2;
+}
+
 .button_blueGradient:hover .button_blueGradient_bg {
-	opacity: 0.7;
+	opacity: 1;
 }
 
 .button_blueGradient .button_blueGradient_bg::after {
@@ -61,7 +155,7 @@
 	width: 30px;
 	height: 30px;
 
-	background: $color-white;
+	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
 	border-radius: 100%;
 
 	left: 0%;
@@ -76,7 +170,7 @@
 	width: 30px;
 	height: 30px;
 
-	background: $color-white;
+	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
 	border-radius: 100%;
 
 	left: 0%;
@@ -88,7 +182,7 @@
 
 @keyframes bgMove {
 	0% {
-		left: calc(0% - 15px);
+		left: calc(0% + 4px);
 		top: calc(0% - 15px);
 	}
 
@@ -98,7 +192,7 @@
 	}
 
 	50% {
-		left: calc(100% - 15px);
+		left: calc(100% - 30px);
 		top: calc(100% - 15px);
 	}
 
@@ -108,7 +202,7 @@
 	}
 
 	100% {
-		left: calc(0% - 15px);
+		left: calc(0% + 4px);
 		top: calc(0% - 15px);
 	}
 }

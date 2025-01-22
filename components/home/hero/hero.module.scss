@@ -13,6 +13,123 @@
 	margin: 0 auto;
 }
 
+.section .heroBg {
+	position: absolute;
+
+	left: 50%;
+	top: 50%;
+
+	translate: -50% -50%;
+
+	width: 100%;
+	max-width: 2500px;
+	height: auto;
+
+	z-index: -1;
+	pointer-events: none;
+}
+
+.section .anim1 {
+	position: absolute;
+
+	left: 134px;
+	top: 300px;
+
+	width: 281px;
+	height: 120px;
+
+	-webkit-mask-image: url('../../../public/images/hero/anim1.png');
+	mask-image: url('../../../public/images/hero/anim1.png');
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	mask-size: 100% 100%;
+}
+
+.section .anim1::before {
+	position: absolute;
+	content: '';
+
+	left: 0px;
+	top: 0px;
+
+	width: 200%;
+	height: 200%;
+
+	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+	transform: rotate(45deg);
+
+	animation: bgMove 15s infinite linear;
+
+	opacity: 0.4;
+}
+
+@keyframes bgMove {
+	0% {
+		left: -150%;
+		top: 0px;
+	}
+
+	50% {
+		left: 100%;
+		top: 0px;
+	}
+
+	100% {
+		left: -150%;
+		top: 0px;
+	}
+}
+
+.section .anim2 {
+	position: absolute;
+
+	left: 120px;
+	bottom: 0px;
+
+	width: 24px;
+	height: 120px;
+
+	-webkit-mask-image: url('../../../public/images/hero/anim2.png');
+	mask-image: url('../../../public/images/hero/anim2.png');
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	mask-size: 100% 100%;
+}
+
+.section .anim2::before {
+	position: absolute;
+	content: '';
+
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+
+	width: 600%;
+	height: 50%;
+
+	background: linear-gradient(225deg, #7effb4 0%, #5c80ff 100%);
+
+	animation: bgMove2 15s infinite linear;
+
+	opacity: 0.4;
+}
+
+@keyframes bgMove2 {
+	0% {
+		transform: rotate(0deg);
+		scale: 1;
+	}
+
+	50% {
+		scale: 0.01;
+	}
+
+	100% {
+		transform: rotate(360deg);
+		scale: 1;
+	}
+}
+
 .inside .info {
 	position: relative;
 	width: 100%;
@@ -34,12 +151,15 @@
 
 	padding: 10px 14px;
 
-	border-radius: 12px;
+	border-radius: 0px;
 
-	background: rgba(217, 217, 217, 0.01);
-	border: 1px solid rgba(255, 255, 255, 0.08);
-	box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.08) inset;
+	// background: rgba(217, 217, 217, 0.01);
+	// border: 1px solid rgba(255, 255, 255, 0.08);
+	// box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.08) inset;
 	backdrop-filter: blur(5px);
+
+	background: url('../../../public/images/hero/topInfoBg.png');
+	background-size: 100% 100%;
 }
 
 .inside .info .infoInside img {
@@ -102,165 +222,8 @@
 	}
 }
 
-.inside .bgTitle {
-	position: relative;
-	margin-top: 65px;
-
-	width: 100%;
-	text-align: center;
-	text-wrap: nowrap;
-
-	color: $color-text;
-	font-family: $font1;
-	font-size: 168px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 120%;
-	//letter-spacing: -5.04px;
-	letter-spacing: 0px;
-
-	background: url('../../../public/images/hero/heroTextBg.png') 0% 0% repeat,
-		$color-background;
-	background-size: 1920px auto;
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-
-	animation: bgMove 120s infinite linear;
-}
-
-@keyframes bgMove {
-	0% {
-		background-position: 0% 0%;
-	}
-
-	50% {
-		background-position: 0% 100%;
-	}
-
-	100% {
-		background-position: 0% 0%;
-	}
-}
-
-.inside .bgTitle:after {
-	position: absolute;
-	content: attr(data-text);
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	text-shadow: rgb(52, 88, 87) 3px 0px 0px,
-		rgb(52, 88, 87) 2.83487px 0.981584px 0px,
-		rgb(52, 88, 87) 2.35766px 1.85511px 0px,
-		rgb(52, 88, 87) 1.62091px 2.52441px 0px,
-		rgb(52, 88, 87) 0.705713px 2.91581px 0px,
-		rgb(52, 88, 87) -0.287171px 2.98622px 0px,
-		rgb(52, 88, 87) -1.24844px 2.72789px 0px,
-		rgb(52, 88, 87) -2.07227px 2.16926px 0px,
-		rgb(52, 88, 87) -2.66798px 1.37182px 0px,
-		rgb(52, 88, 87) -2.96998px 0.42336px 0px,
-		rgb(52, 88, 87) -2.94502px -0.571704px 0px,
-		rgb(52, 88, 87) -2.59586px -1.50383px 0px,
-		rgb(52, 88, 87) -1.96093px -2.27041px 0px,
-		rgb(52, 88, 87) -1.11013px -2.78704px 0px,
-		rgb(52, 88, 87) -0.137119px -2.99686px 0px,
-		rgb(52, 88, 87) 0.850987px -2.87677px 0px,
-		rgb(52, 88, 87) 1.74541px -2.43999px 0px,
-		rgb(52, 88, 87) 2.44769px -1.73459px 0px,
-		rgb(52, 88, 87) 2.88051px -0.838247px 0px;
-
-	opacity: 0.7;
-
-	z-index: -1;
-	pointer-events: none;
-}
-
-.inside .bgTitle:before {
-	position: absolute;
-	content: attr(data-text);
-	left: 0px;
-	top: 0px;
-	width: 100%;
-
-	text-shadow: rgba(#ffffff, 1) 0px 0px 6px;
-	color: #fff;
-	opacity: 0.025;
-
-	z-index: 3;
-	pointer-events: none;
-}
-
-.inside .bgTitle .shadows {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-
-	pointer-events: none;
-	opacity: 0.8;
-}
-
-.inside .bgTitle .shadows::before {
-	position: absolute;
-	content: '';
-	left: -650px;
-	top: -650px;
-	width: 1300px;
-	height: 1300px;
-
-	background: url('../../../public/images/hero/bgShadowBlack.png');
-	background-size: 100% 100%;
-}
-
-.inside .bgTitle .shadows::after {
-	position: absolute;
-	content: '';
-	right: -650px;
-	top: -650px;
-	width: 1300px;
-	height: 1300px;
-
-	background: url('../../../public/images/hero/bgShadowBlack.png');
-	background-size: 100% 100%;
-}
-
-.inside .bgTitle .titleBg {
-	position: absolute;
-	left: 50%;
-	top: 100%;
-
-	translate: -50% -50%;
-
-	width: 2400px;
-	height: 2400px;
-
-	pointer-events: none;
-}
-
 // RWD
 @media (max-width: 1100px) {
-	.inside .bgTitle {
-		font-size: 120px;
-		letter-spacing: -3px;
-
-		margin-top: 40px;
-	}
-}
-
-@media (max-width: 900px) {
-	.inside .bgTitle .shadows {
-		opacity: 0.3;
-	}
-}
-
-@media (max-width: 800px) {
-	.inside .bgTitle {
-		font-size: 80px;
-		letter-spacing: -1px;
-
-		margin-top: 20px;
-	}
 }
 
 @media (max-width: 700px) {
@@ -273,31 +236,6 @@
 }
 
 @media (max-width: 550px) {
-	.inside .bgTitle {
-		font-size: 60px;
-		letter-spacing: 0px;
-
-		margin-top: 20px;
-
-		background-size: 1000px auto;
-	}
-
-	.inside .bgTitle:after {
-		text-shadow: rgb(52, 88, 87) 2px 0px 0px,
-			rgb(52, 88, 87) 1.75517px 0.958851px 0px,
-			rgb(52, 88, 87) 1.0806px 1.68294px 0px,
-			rgb(52, 88, 87) 0.141474px 1.99499px 0px,
-			rgb(52, 88, 87) -0.832294px 1.81859px 0px,
-			rgb(52, 88, 87) -1.60229px 1.19694px 0px,
-			rgb(52, 88, 87) -1.97998px 0.28224px 0px,
-			rgb(52, 88, 87) -1.87291px -0.701566px 0px,
-			rgb(52, 88, 87) -1.30729px -1.5136px 0px,
-			rgb(52, 88, 87) -0.421592px -1.95506px 0px,
-			rgb(52, 88, 87) 0.567324px -1.91785px 0px,
-			rgb(52, 88, 87) 1.41734px -1.41108px 0px,
-			rgb(52, 88, 87) 1.92034px -0.558831px 0px;
-	}
-
 	.inside .info .infoInside img {
 		width: 14px;
 	}
@@ -308,5 +246,11 @@
 
 	.inside .info {
 		margin-top: 50px;
+	}
+
+	.section .heroBg {
+		width: 200%;
+		top: 20%;
+		left: 10%;
 	}
 }

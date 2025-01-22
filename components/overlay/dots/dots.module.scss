@@ -52,17 +52,9 @@
 }
 
 .dots[data-type='hero1'] {
-	width: 192px;
+	width: 140px;
 	left: 0px;
-	top: 0px;
-
-	z-index: 3;
-}
-
-.dots[data-type='hero2'] {
-	width: 192px;
-	right: 0px;
-	bottom: -160px;
+	top: 250px;
 
 	z-index: 3;
 }
@@ -218,12 +210,6 @@
 	}
 
 	.dots[data-type='hero1'] {
-		left: 50%;
-		translate: -50% 0;
-	}
-
-	.dots[data-type='hero2'] {
-		right: auto;
 		left: 50%;
 		translate: -50% 0;
 	}

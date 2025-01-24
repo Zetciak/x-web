@@ -22,6 +22,14 @@ export default function Hero(props) {
 					priority={true}
 					className="image"
 				/>
+				<video
+					src="./heroRobot.mp4"
+					autoPlay
+					loop
+					muted
+					playsInline
+					className={styles.videoDiv}
+				></video>
 			</div>
 			<div className={styles.anim1}></div>
 			<div className={styles.anim2}></div>

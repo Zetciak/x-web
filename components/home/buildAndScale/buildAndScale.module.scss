@@ -76,7 +76,7 @@
 		$color-background;
 	background-size: 1920px auto;
 
-	animation: bgMove 60s infinite linear;
+	//animation: bgMove 60s infinite linear;
 }
 
 @keyframes bgMove {
@@ -130,7 +130,7 @@
 		rgba($color-lightblue, 0) 100%
 	);
 
-	animation: square1Anim 48s infinite linear;
+	//animation: square1Anim 48s infinite linear;
 }
 
 @keyframes square1Anim {
@@ -165,7 +165,7 @@
 		rgba($color-lightblue, 0) 100%
 	);
 
-	animation: square2Anim 48s infinite linear;
+	//animation: square2Anim 48s infinite linear;
 }
 
 @keyframes square2Anim {
@@ -200,7 +200,7 @@
 		rgba($color-lightblue, 0) 100%
 	);
 
-	animation: square3Anim 48s infinite linear;
+	//animation: square3Anim 48s infinite linear;
 }
 
 @keyframes square3Anim {
@@ -234,7 +234,7 @@
 		rgba($color-lightblue, 1) 0%,
 		rgba($color-lightblue, 0) 100%
 	);
-	animation: square4Anim 48s infinite linear;
+	//animation: square4Anim 48s infinite linear;
 }
 
 @keyframes square4Anim {

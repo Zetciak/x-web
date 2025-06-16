@@ -7,9 +7,9 @@ import Footer from '@/components/overlay/footer/footer';
 
 import Hero from './hero/hero';
 import Gpu from './gpu/gpu';
-import GpuWork from './gpuWork/gpuWork';
-import Infrastructure from './infrastructure/infrastructure';
-import Tokenomics from './tokenomics/tokenomics';
+// import GpuWork from './gpuWork/gpuWork';
+// import Infrastructure from './infrastructure/infrastructure';
+// import Tokenomics from './tokenomics/tokenomics';
 import Faq from './faq/faq';
 import Participate from './participate/participate';
 import HowItWorks from './howItWorks/howItWorks';
@@ -25,9 +25,9 @@ export default function Home() {
 			<Nav />
 			<Hero />
 			<Gpu />
-			<GpuWork />
-			<Infrastructure />
-			<Tokenomics />
+			{/* <GpuWork /> */}
+			{/* <Infrastructure /> */}
+			{/* <Tokenomics /> */}
 			<Roadmap />
 			<Faq />
 			<Participate />

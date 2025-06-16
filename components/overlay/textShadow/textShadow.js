@@ -1,5 +1,5 @@
 // >> Modules
-import { Particles } from '@blackbox-vision/react-particles';
+// import { Particles } from '@blackbox-vision/react-particles';
 import styles from './textShadow.module.scss';
 import design from '@/styles/design_system.module.scss';
 
@@ -7,7 +7,7 @@ import design from '@/styles/design_system.module.scss';
 export default function TextShadow(props) {
 	return (
 		<div className={styles.dots}>
-			<Particles
+			{/* <Particles
 				id={props.id || ''}
 				width="100%"
 				height="100%"
@@ -25,7 +25,7 @@ export default function TextShadow(props) {
 						line_linked: { enable: false },
 					},
 				}}
-			/>
+			/> */}
 		</div>
 	);
 }

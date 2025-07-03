@@ -18,7 +18,7 @@ export default function CustomToaster(props) {
 
 					color: '#fff',
 					borderRadius: '8px',
-					//backdropFilter: 'blur(10px)',
+					backdropFilter: 'blur(10px)',
 					maxWidth: '90%',
 					padding: '6px 16px',
 					fontWeight: '400',

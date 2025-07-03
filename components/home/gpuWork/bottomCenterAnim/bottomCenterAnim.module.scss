@@ -56,7 +56,7 @@
 	border: 1px solid rgba(255, 255, 255, 0.08);
 	background: rgba(255, 255, 255, 0.04);
 	box-shadow: 0px 0px 48px 0px rgba(255, 255, 255, 0.08) inset;
-	//backdrop-filter: blur(12px);
+	backdrop-filter: blur(12px);
 
 	z-index: 6;
 
@@ -109,7 +109,7 @@
 
 	transition: opacity $animation3;
 
-	//animation: shadowAnim 2s infinite linear;
+	animation: shadowAnim 2s infinite linear;
 }
 
 @keyframes shadowAnim {
@@ -156,7 +156,7 @@
 		opacity: 1;
 	}
 
-	//backdrop-filter: blur(12px);
+	backdrop-filter: blur(12px);
 }
 
 .feature .slider .oneElement[data-class='center'] {
@@ -175,7 +175,7 @@
 		opacity: 0;
 	}
 
-	//backdrop-filter: blur(8px);
+	backdrop-filter: blur(8px);
 }
 
 .feature .slider .oneElement[data-class='bottom'] {
@@ -194,7 +194,7 @@
 		opacity: 0;
 	}
 
-	//backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px);
 	opacity: 0.5;
 }
 
